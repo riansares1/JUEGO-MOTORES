@@ -1,0 +1,788 @@
+{
+ "V1-01": [
+  {
+   "id": "cilindro1",
+   "nombre": "Cilindro 1 (amarillo)",
+   "x": 17,
+   "y": 33,
+   "w": 16,
+   "h": 36
+  },
+  {
+   "id": "cilindro2",
+   "nombre": "Cilindro 2 (verde)",
+   "x": 32,
+   "y": 34,
+   "w": 16,
+   "h": 28
+  },
+  {
+   "id": "cilindro3",
+   "nombre": "Cilindro 3 (rojo)",
+   "x": 47,
+   "y": 31,
+   "w": 15,
+   "h": 29
+  },
+  {
+   "id": "cilindro4",
+   "nombre": "Cilindro 4 (naranja)",
+   "x": 62,
+   "y": 26,
+   "w": 14,
+   "h": 22
+  },
+  {
+   "id": "culata",
+   "nombre": "Culata y árbol de levas",
+   "x": 18,
+   "y": 4,
+   "w": 68,
+   "h": 22
+  },
+  {
+   "id": "valvula_admision",
+   "nombre": "Válvula de admisión (cilindro 1)",
+   "x": 21,
+   "y": 26,
+   "w": 10,
+   "h": 8
+  },
+  {
+   "id": "valvula_escape",
+   "nombre": "Válvula de escape (cilindro 4)",
+   "x": 66,
+   "y": 19,
+   "w": 10,
+   "h": 9
+  },
+  {
+   "id": "ciguenal",
+   "nombre": "Cigüeñal",
+   "x": 5,
+   "y": 62,
+   "w": 70,
+   "h": 22
+  },
+  {
+   "id": "volante",
+   "nombre": "Volante de inercia",
+   "x": 74,
+   "y": 36,
+   "w": 24,
+   "h": 40
+  },
+  {
+   "id": "carter",
+   "nombre": "Cárter",
+   "x": 0,
+   "y": 85,
+   "w": 72,
+   "h": 15
+  }
+ ],
+ "V1-02": [
+  {
+   "id": "bujia",
+   "nombre": "Bujía",
+   "x": 43,
+   "y": 4,
+   "w": 9,
+   "h": 15
+  },
+  {
+   "id": "culata",
+   "nombre": "Culata (con aletas)",
+   "x": 33,
+   "y": 13,
+   "w": 33,
+   "h": 11
+  },
+  {
+   "id": "piston",
+   "nombre": "Pistón",
+   "x": 42,
+   "y": 25,
+   "w": 14,
+   "h": 15
+  },
+  {
+   "id": "lumbrera_escape",
+   "nombre": "Lumbrera de escape",
+   "x": 57,
+   "y": 37,
+   "w": 12,
+   "h": 5
+  },
+  {
+   "id": "lumbrera_admision",
+   "nombre": "Lumbrera de admisión",
+   "x": 57,
+   "y": 44,
+   "w": 12,
+   "h": 5
+  },
+  {
+   "id": "lumbrera_carga",
+   "nombre": "Lumbrera de carga (transferencia)",
+   "x": 33,
+   "y": 38,
+   "w": 7,
+   "h": 20
+  },
+  {
+   "id": "biela",
+   "nombre": "Biela",
+   "x": 41,
+   "y": 33,
+   "w": 13,
+   "h": 30
+  },
+  {
+   "id": "ciguenal",
+   "nombre": "Cigüeñal",
+   "x": 38,
+   "y": 60,
+   "w": 25,
+   "h": 26
+  },
+  {
+   "id": "carter",
+   "nombre": "Cárter",
+   "x": 30,
+   "y": 55,
+   "w": 40,
+   "h": 43
+  }
+ ],
+ "V1-03": [
+  {
+   "id": "carburador",
+   "nombre": "Carburador",
+   "x": 2,
+   "y": 27,
+   "w": 26,
+   "h": 28
+  },
+  {
+   "id": "inyeccion_indirecta",
+   "nombre": "Inyección indirecta (múltiple de admisión)",
+   "x": 29,
+   "y": 27,
+   "w": 27,
+   "h": 28
+  },
+  {
+   "id": "inyeccion_directa",
+   "nombre": "Inyección directa (cámara de combustión)",
+   "x": 57,
+   "y": 27,
+   "w": 27,
+   "h": 28
+  },
+  {
+   "id": "linea_tiempo",
+   "nombre": "Línea temporal (1970–2000)",
+   "x": 6,
+   "y": 56,
+   "w": 80,
+   "h": 25
+  }
+ ],
+ "V1-04": [
+  {
+   "id": "motor",
+   "nombre": "Motor",
+   "x": 7,
+   "y": 16,
+   "w": 15,
+   "h": 54
+  },
+  {
+   "id": "intercooler",
+   "nombre": "Intercooler (aircooler)",
+   "x": 31,
+   "y": 4,
+   "w": 24,
+   "h": 22
+  },
+  {
+   "id": "aire_comprimido",
+   "nombre": "Conducto de aire comprimido",
+   "x": 57,
+   "y": 6,
+   "w": 18,
+   "h": 30
+  },
+  {
+   "id": "compresor",
+   "nombre": "Compresor",
+   "x": 65,
+   "y": 41,
+   "w": 10,
+   "h": 29
+  },
+  {
+   "id": "turbina",
+   "nombre": "Turbina",
+   "x": 76,
+   "y": 37,
+   "w": 10,
+   "h": 36
+  },
+  {
+   "id": "entrada_aire",
+   "nombre": "Entrada de aire",
+   "x": 52,
+   "y": 51,
+   "w": 12,
+   "h": 9
+  },
+  {
+   "id": "salida_escape",
+   "nombre": "Salida de gases de escape",
+   "x": 85,
+   "y": 48,
+   "w": 11,
+   "h": 10
+  },
+  {
+   "id": "colector_escape",
+   "nombre": "Conducto de gases de escape",
+   "x": 2,
+   "y": 86,
+   "w": 84,
+   "h": 13
+  }
+ ],
+ "V1-05": [
+  {
+   "id": "aletas",
+   "nombre": "Cilindro con aletas (refrigeración por aire)",
+   "x": 0,
+   "y": 0,
+   "w": 40,
+   "h": 100
+  },
+  {
+   "id": "radiador",
+   "nombre": "Radiador (refrigeración por agua)",
+   "x": 60,
+   "y": 0,
+   "w": 34,
+   "h": 100
+  }
+ ],
+ "V1-06": [
+  {
+   "id": "numeracion",
+   "nombre": "Esquema de cilindros (6 en línea)",
+   "x": 5,
+   "y": 3,
+   "w": 11,
+   "h": 90
+  },
+  {
+   "id": "biela_manivela",
+   "nombre": "Pistón, biela y manivela",
+   "x": 18,
+   "y": 30,
+   "w": 12,
+   "h": 50
+  },
+  {
+   "id": "arbol_levas",
+   "nombre": "Árbol de levas",
+   "x": 52,
+   "y": 2,
+   "w": 35,
+   "h": 22
+  },
+  {
+   "id": "cilindros",
+   "nombre": "Cilindros y pistones",
+   "x": 57,
+   "y": 24,
+   "w": 24,
+   "h": 34
+  },
+  {
+   "id": "ciguenal",
+   "nombre": "Cigüeñal",
+   "x": 55,
+   "y": 56,
+   "w": 28,
+   "h": 18
+  },
+  {
+   "id": "carter",
+   "nombre": "Cárter",
+   "x": 54,
+   "y": 73,
+   "w": 30,
+   "h": 22
+  },
+  {
+   "id": "poleas",
+   "nombre": "Poleas y correas",
+   "x": 80,
+   "y": 30,
+   "w": 13,
+   "h": 55
+  }
+ ],
+ "V1-07": [
+  {
+   "id": "numeracion",
+   "nombre": "Esquema de cilindros (dos bancadas)",
+   "x": 7,
+   "y": 2,
+   "w": 14,
+   "h": 32
+  },
+  {
+   "id": "angulo",
+   "nombre": "Ángulo entre bancadas (60–120°)",
+   "x": 22,
+   "y": 0,
+   "w": 16,
+   "h": 33
+  },
+  {
+   "id": "esquema",
+   "nombre": "Esquema: cilindros, biela y cigüeñal",
+   "x": 0,
+   "y": 40,
+   "w": 42,
+   "h": 60
+  },
+  {
+   "id": "motor",
+   "nombre": "Motor en V completo",
+   "x": 45,
+   "y": 15,
+   "w": 48,
+   "h": 72
+  }
+ ],
+ "V1-08": [
+  {
+   "id": "numeracion",
+   "nombre": "Esquema de cilindros (VR)",
+   "x": 1,
+   "y": 2,
+   "w": 14,
+   "h": 37
+  },
+  {
+   "id": "angulo",
+   "nombre": "Ángulo entre cilindros (15°)",
+   "x": 18,
+   "y": 0,
+   "w": 13,
+   "h": 36
+  },
+  {
+   "id": "esquema",
+   "nombre": "Esquema VR con cigüeñal",
+   "x": 3,
+   "y": 41,
+   "w": 28,
+   "h": 52
+  },
+  {
+   "id": "bloque",
+   "nombre": "Bloque único VR",
+   "x": 38,
+   "y": 3,
+   "w": 56,
+   "h": 82
+  }
+ ],
+ "V1-09": [
+  {
+   "id": "numeracion",
+   "nombre": "Esquema de cilindros (W12)",
+   "x": 0,
+   "y": 0,
+   "w": 20,
+   "h": 32
+  },
+  {
+   "id": "angulo",
+   "nombre": "Ángulos 72° y 15°",
+   "x": 23,
+   "y": 0,
+   "w": 17,
+   "h": 31
+  },
+  {
+   "id": "bloque",
+   "nombre": "Bloque en W",
+   "x": 5,
+   "y": 42,
+   "w": 28,
+   "h": 56
+  },
+  {
+   "id": "motor",
+   "nombre": "Motor en W completo",
+   "x": 42,
+   "y": 7,
+   "w": 56,
+   "h": 91
+  }
+ ],
+ "V1-10": [
+  {
+   "id": "esquema",
+   "nombre": "Esquema de cilindros opuestos",
+   "x": 8,
+   "y": 0,
+   "w": 22,
+   "h": 25
+  },
+  {
+   "id": "angulo",
+   "nombre": "Ángulo de 180°",
+   "x": 10,
+   "y": 25,
+   "w": 18,
+   "h": 14
+  },
+  {
+   "id": "moto",
+   "nombre": "Motor bóxer de motocicleta",
+   "x": 0,
+   "y": 45,
+   "w": 38,
+   "h": 55
+  },
+  {
+   "id": "motor",
+   "nombre": "Motor bóxer completo",
+   "x": 38,
+   "y": 0,
+   "w": 62,
+   "h": 92
+  }
+ ],
+ "A1-01": [
+  {
+   "id": "bujia",
+   "nombre": "Bujía o inyector",
+   "x": 51,
+   "y": 8,
+   "w": 5,
+   "h": 19
+  },
+  {
+   "id": "valvula",
+   "nombre": "Válvula",
+   "x": 57,
+   "y": 14,
+   "w": 7,
+   "h": 13
+  },
+  {
+   "id": "camara",
+   "nombre": "Volumen final de compresión (cámara)",
+   "x": 39,
+   "y": 26,
+   "w": 27,
+   "h": 12
+  },
+  {
+   "id": "pms",
+   "nombre": "Punto muerto superior (PMS)",
+   "x": 24,
+   "y": 28,
+   "w": 12,
+   "h": 6
+  },
+  {
+   "id": "carrera",
+   "nombre": "Carrera",
+   "x": 25,
+   "y": 34,
+   "w": 6,
+   "h": 23
+  },
+  {
+   "id": "pmi",
+   "nombre": "Punto muerto inferior (PMI)",
+   "x": 24,
+   "y": 57.5,
+   "w": 12,
+   "h": 6
+  },
+  {
+   "id": "piston",
+   "nombre": "Pistón",
+   "x": 39,
+   "y": 40,
+   "w": 25,
+   "h": 17
+  },
+  {
+   "id": "pared",
+   "nombre": "Pared del cilindro",
+   "x": 64,
+   "y": 22,
+   "w": 6,
+   "h": 38
+  },
+  {
+   "id": "biela",
+   "nombre": "Biela",
+   "x": 52,
+   "y": 57,
+   "w": 13,
+   "h": 22
+  },
+  {
+   "id": "manivela",
+   "nombre": "Mecanismo biela-manivela (cigüeñal)",
+   "x": 45,
+   "y": 76,
+   "w": 28,
+   "h": 18
+  },
+  {
+   "id": "mov_alternativo",
+   "nombre": "Movimiento alternativo (flecha)",
+   "x": 44,
+   "y": 59,
+   "w": 7,
+   "h": 15
+  },
+  {
+   "id": "mov_rotativo",
+   "nombre": "Movimiento rotativo (flecha)",
+   "x": 49,
+   "y": 88,
+   "w": 16,
+   "h": 11
+  }
+ ],
+ "A1-02": [
+  {
+   "id": "admision",
+   "nombre": "Admisión",
+   "x": 3,
+   "y": 0,
+   "w": 21,
+   "h": 100
+  },
+  {
+   "id": "compresion",
+   "nombre": "Compresión",
+   "x": 27,
+   "y": 0,
+   "w": 21,
+   "h": 100
+  },
+  {
+   "id": "expansion",
+   "nombre": "Expansión",
+   "x": 50,
+   "y": 0,
+   "w": 23,
+   "h": 100
+  },
+  {
+   "id": "escape",
+   "nombre": "Escape",
+   "x": 74,
+   "y": 0,
+   "w": 26,
+   "h": 100
+  }
+ ],
+ "A1-03": [
+  {
+   "id": "compresion",
+   "nombre": "Compresión",
+   "x": 0,
+   "y": 0,
+   "w": 24,
+   "h": 100
+  },
+  {
+   "id": "combustion_expansion",
+   "nombre": "Combustión-expansión",
+   "x": 25,
+   "y": 0,
+   "w": 24,
+   "h": 100
+  },
+  {
+   "id": "escape",
+   "nombre": "Escape",
+   "x": 50,
+   "y": 0,
+   "w": 24,
+   "h": 100
+  },
+  {
+   "id": "barrido",
+   "nombre": "Barrido",
+   "x": 75,
+   "y": 0,
+   "w": 25,
+   "h": 100
+  }
+ ],
+ "A1-04": [
+  {
+   "id": "conducto_comun",
+   "nombre": "Conducto común",
+   "x": 34,
+   "y": 17,
+   "w": 40,
+   "h": 7
+  },
+  {
+   "id": "regulador",
+   "nombre": "Regulador de presión",
+   "x": 72,
+   "y": 16,
+   "w": 8,
+   "h": 9
+  },
+  {
+   "id": "sensor_presion",
+   "nombre": "Sensor de presión",
+   "x": 36,
+   "y": 10,
+   "w": 6,
+   "h": 8
+  },
+  {
+   "id": "inyectores",
+   "nombre": "Inyectores con control eléctrico",
+   "x": 41,
+   "y": 30,
+   "w": 30,
+   "h": 32
+  },
+  {
+   "id": "deposito",
+   "nombre": "Depósito de gasóleo y bomba de baja presión",
+   "x": 4,
+   "y": 27,
+   "w": 22,
+   "h": 18
+  },
+  {
+   "id": "bomba_alta",
+   "nombre": "Bomba de alta presión",
+   "x": 0,
+   "y": 54,
+   "w": 17,
+   "h": 19
+  },
+  {
+   "id": "centralita",
+   "nombre": "Unidad de control electrónico",
+   "x": 24,
+   "y": 68,
+   "w": 10,
+   "h": 16
+  },
+  {
+   "id": "sensores",
+   "nombre": "Sensores",
+   "x": 36,
+   "y": 68,
+   "w": 58,
+   "h": 20
+  }
+ ],
+ "A1-05": [
+  {
+   "id": "directa",
+   "nombre": "Inyección directa",
+   "x": 0,
+   "y": 0,
+   "w": 48,
+   "h": 100
+  },
+  {
+   "id": "indirecta",
+   "nombre": "Inyección indirecta",
+   "x": 52,
+   "y": 0,
+   "w": 48,
+   "h": 100
+  },
+  {
+   "id": "inyector_directa",
+   "nombre": "Inyector en la cámara de combustión",
+   "x": 24,
+   "y": 33,
+   "w": 16,
+   "h": 18
+  },
+  {
+   "id": "inyector_indirecta",
+   "nombre": "Inyector en el conducto de admisión",
+   "x": 85,
+   "y": 8,
+   "w": 12,
+   "h": 32
+  },
+  {
+   "id": "conducto_admision",
+   "nombre": "Conducto de admisión",
+   "x": 74,
+   "y": 30,
+   "w": 11,
+   "h": 16
+  }
+ ],
+ "A1-06": [
+  {
+   "id": "monopunto",
+   "nombre": "Inyección monopunto",
+   "x": 2,
+   "y": 0,
+   "w": 48,
+   "h": 95
+  },
+  {
+   "id": "multipunto",
+   "nombre": "Inyección multipunto",
+   "x": 52,
+   "y": 0,
+   "w": 48,
+   "h": 95
+  }
+ ],
+ "X1-05": [
+  {
+   "id": "turbina",
+   "nombre": "Turbina (lado de escape)",
+   "x": 14,
+   "y": 19,
+   "w": 35,
+   "h": 56
+  },
+  {
+   "id": "eje",
+   "nombre": "Eje común",
+   "x": 41,
+   "y": 36,
+   "w": 20,
+   "h": 12
+  },
+  {
+   "id": "compresor",
+   "nombre": "Compresor (lado de admisión)",
+   "x": 59,
+   "y": 4,
+   "w": 39,
+   "h": 68
+  }
+ ]
+}
