@@ -232,7 +232,7 @@ a { color: var(--ambar); }
 .banda-guia li.hecho { text-decoration: line-through; opacity: 0.6; }
 .banda-guia li.ahora { font-weight: 700; }
 
-.toast {
+.toast { pointer-events: none;
   position: fixed; left: 50%; bottom: 90px; transform: translateX(-50%); z-index: 50; max-width: min(92vw, 640px);
   padding: 12px 18px; border-radius: 8px; box-shadow: var(--sombra); font-weight: 600; text-align: center;
 }

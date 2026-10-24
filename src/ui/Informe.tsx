@@ -29,10 +29,10 @@ export function Informe({ asig, progreso, informe, onContinuar, onMenu }: Props)
             <b>{informe.sueldoBruto}</b>Sueldo bruto (cr)
           </div>
           <div className="cifra">
-            <b>−{informe.multas}</b>Multas por citación
+            <b>{informe.multas ? `−${informe.multas}` : 0}</b>Multas por citación
           </div>
           <div className="cifra">
-            <b>−{informe.consultas}</b>Consultas de páginas requisadas
+            <b>{informe.consultas ? `−${informe.consultas}` : 0}</b>Consultas de páginas requisadas
           </div>
           <div className="cifra">
             <b>{informe.sueldoNeto}</b>Sueldo neto (cr)

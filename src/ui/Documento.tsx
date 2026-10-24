@@ -1,4 +1,4 @@
-import { Fragment, type ReactNode } from 'react';
+import { createContext, Fragment, useContext, type ReactNode } from 'react';
 import type { Documento, ImagenDef } from '../motor/tipos';
 import { ImagenZonas } from './ImagenZonas';
 
@@ -11,25 +11,52 @@ export interface PropsDocumento {
   onElemento: (ref: string) => void;
 }
 
+type Etiqueta = 'span' | 'div' | 'li' | 'td';
+
+/** Elemento señalable. Es un componente estable para que un clic no pierda su destino al re-renderizar. */
+function Elemento({ refEl, como, className, activo, onElemento, children }: { refEl: string; como: Etiqueta; className: string; activo: boolean; onElemento: (r: string) => void; children: ReactNode }) {
+  const Tag = como;
+  return (
+    <Tag
+      className={`el ${className}`}
+      onClick={(e) => {
+        e.stopPropagation();
+        if (activo) onElemento(refEl);
+      }}
+      data-ref={refEl}
+    >
+      {children}
+    </Tag>
+  );
+}
+
+const CtxDoc = createContext<{ docId: string; inspeccion: boolean; claseElemento: (r: string) => string; onElemento: (r: string) => void } | null>(null);
+
+function El({ id, children, como = 'span', className = '' }: { id: string; children: ReactNode; como?: Etiqueta; className?: string }) {
+  const c = useContext(CtxDoc)!;
+  const refEl = `${c.docId}:${id}`;
+  return (
+    <Elemento refEl={refEl} como={como} className={`${className} ${c.claseElemento(refEl)}`} activo={c.inspeccion} onElemento={c.onElemento}>
+      {children}
+    </Elemento>
+  );
+}
+
 /** Cuerpo de un documento con sus elementos señalables. */
 export function CuerpoDocumento({ doc, imagenes, inspeccion, claseElemento, onElemento }: PropsDocumento) {
   const r = (elem: string) => `${doc.id}:${elem}`;
-  const El = ({ id, children, como = 'span', className = '' }: { id: string; children: ReactNode; como?: 'span' | 'div' | 'li' | 'td'; className?: string }) => {
-    const Tag = como;
-    return (
-      <Tag
-        className={`el ${className} ${claseElemento(r(id))}`}
-        onClick={(e) => {
-          e.stopPropagation();
-          if (inspeccion) onElemento(r(id));
-        }}
-        data-ref={r(id)}
-      >
-        {children}
-      </Tag>
-    );
-  };
+  const ctx = { docId: doc.id, inspeccion, claseElemento, onElemento };
+  return <CtxDoc.Provider value={ctx}>{contenido(doc, imagenes, inspeccion, claseElemento, onElemento, r)}</CtxDoc.Provider>;
+}
 
+function contenido(
+  doc: Documento,
+  imagenes: Map<string, ImagenDef>,
+  inspeccion: boolean,
+  claseElemento: (ref: string) => string,
+  onElemento: (ref: string) => void,
+  r: (elem: string) => string,
+) {
   switch (doc.tipo) {
     case 'glosario':
       return (

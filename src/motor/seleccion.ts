@@ -71,7 +71,10 @@ export function prioridadConceptos(asig: Asignatura, progreso: Progreso, jornada
     meter(delDia);
     return lista;
   }
-  meter(delDia.filter((id) => est(id) < nivel('reglamento')));
+  // Reglas nuevas sin aplicar, intercaladas (1ª, 3ª, 5ª… y luego 2ª, 4ª…) para que, si no caben
+  // todas en la jornada, la muestra recorra todo el boletín y no solo su principio.
+  const nuevas = delDia.filter((id) => est(id) < nivel('reglamento'));
+  meter([...nuevas.filter((_, i) => i % 2 === 0), ...nuevas.filter((_, i) => i % 2 === 1)]);
   meter([...fallados].sort((a, b) => pos(a) - pos(b)));
   const repaso = permitidos
     .filter((id) => est(id) >= nivel('reglamento') && est(id) < nivel('dominado'))
