@@ -311,3 +311,5 @@ a { color: var(--ambar); }
   .ventana-doc { position: relative !important; left: auto !important; top: auto !important; width: auto; margin: 10px; }
   .boletin, .informe { padding: 16px; }
 }
+@media (max-width: 900px) { .editor-rejilla { grid-template-columns: 1fr !important; } }
+.papel input, .papel select, .papel textarea { color-scheme: light; }
