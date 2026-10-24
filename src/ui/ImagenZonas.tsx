@@ -105,3 +105,18 @@ export function ImagenZonas({ imagen, recorte, clase, zonasVisibles, resaltarAlP
     </div>
   );
 }
+
+/** Imagen con marcadores numerados en cada zona y su leyenda (boletín y Reglamento). */
+export function ImagenConLeyenda({ imagen }: { imagen: ImagenDef }) {
+  return (
+    <figure>
+      <div style={{ border: '1px solid var(--papel-borde)' }}>
+        <ImagenZonas imagen={imagen} marcadores={imagen.zonas.map((z, i) => ({ id: z.id, zona: z.id, numero: i + 1 }))} />
+      </div>
+      <figcaption>
+        <b>{imagen.titulo}</b> ({imagen.fuente}) — {imagen.zonas.map((z, i) => `${i + 1}: ${z.nombre}`).join(' · ')}
+      </figcaption>
+    </figure>
+  );
+}
+

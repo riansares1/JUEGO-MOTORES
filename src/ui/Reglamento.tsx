@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from 'react';
 import { conceptosHastaJornada } from '../motor/seleccion';
 import type { Asignatura, Concepto, ImagenDef } from '../motor/tipos';
-import { ImagenZonas, urlImagen } from './ImagenZonas';
+import { ImagenConLeyenda, urlImagen } from './ImagenZonas';
 
 interface Props {
   asig: Asignatura;
@@ -138,7 +138,7 @@ export function Reglamento({ asig, jornada, requisadas, consultadas, esperandoPr
               </button>
             </div>
             <div className="cuerpo-doc">
-              <ImagenZonas imagen={visor} />
+              <ImagenConLeyenda imagen={visor} />
               <p className="nota" style={{ color: 'var(--tinta-suave)' }}>{visor.fuente}</p>
             </div>
           </div>

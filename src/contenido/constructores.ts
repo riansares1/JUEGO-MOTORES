@@ -135,6 +135,7 @@ interface OpcDisc {
   guia?: string;
   imagen?: string;
   preguntas?: Pregunta[];
+  elementosAceptados?: string[];
 }
 
 export const disc = (o: OpcDisc): Discrepancia => ({
@@ -143,6 +144,7 @@ export const disc = (o: OpcDisc): Discrepancia => ({
   ...(o.imagen ? { imagen: o.imagen } : {}),
   parches: o.parches ?? [{ ref: o.ref, texto: o.texto }],
   elemento: o.ref,
+  ...(o.elementosAceptados ? { elementosAceptados: o.elementosAceptados } : {}),
   pruebas: o.pruebas ?? [regla(o.concepto)],
   explicacion: o.explicacion,
   ...(o.guia ? { guia: o.guia } : {}),

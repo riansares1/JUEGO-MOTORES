@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { conceptosHastaJornada } from '../motor/seleccion';
 import { jornadaDef } from '../motor/partida';
-import type { Asignatura, Concepto, ImagenDef, Progreso } from '../motor/tipos';
-import { ImagenZonas } from './ImagenZonas';
+import type { Asignatura, Concepto, Progreso } from '../motor/tipos';
+import { ImagenConLeyenda } from './ImagenZonas';
 import { imagenesDeConcepto } from './Reglamento';
 
 interface Props {
@@ -10,19 +10,6 @@ interface Props {
   progreso: Progreso;
   onAbrirVentanilla: () => void;
   onSalir: () => void;
-}
-
-export function ImagenConLeyenda({ imagen }: { imagen: ImagenDef }) {
-  return (
-    <figure>
-      <div style={{ border: '1px solid var(--papel-borde)' }}>
-        <ImagenZonas imagen={imagen} marcadores={imagen.zonas.map((z, i) => ({ id: z.id, zona: z.id, numero: i + 1 }))} />
-      </div>
-      <figcaption>
-        <b>{imagen.titulo}</b> ({imagen.fuente}) — {imagen.zonas.map((z, i) => `${i + 1}: ${z.nombre}`).join(' · ')}
-      </figcaption>
-    </figure>
-  );
 }
 
 export function Boletin({ asig, progreso, onAbrirVentanilla, onSalir }: Props) {
