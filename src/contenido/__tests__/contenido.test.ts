@@ -54,6 +54,22 @@ describe('imágenes', () => {
       for (const c of im.conceptos) expect(A.conceptos.some((x) => x.id === c), `${im.id}→${c}`).toBe(true);
     }
   });
+  it('cada zona tiene algún punto donde es la zona más pequeña (se puede señalar)', () => {
+    for (const im of A.imagenes) {
+      for (const z of im.zonas) {
+        let alcanzable = false;
+        for (let a = 0.05; a < 1 && !alcanzable; a += 0.05) {
+          for (let c = 0.05; c < 1 && !alcanzable; c += 0.05) {
+            const x = z.x + z.w * a;
+            const y = z.y + z.h * c;
+            const gana = im.zonas.filter((q) => x >= q.x && x <= q.x + q.w && y >= q.y && y <= q.y + q.h).sort((p, q) => p.w * p.h - q.w * q.h)[0];
+            if (gana?.id === z.id) alcanzable = true;
+          }
+        }
+        expect(alcanzable, `${im.id}/${z.id}`).toBe(true);
+      }
+    }
+  });
   it('las imágenes V1-01 … V1-10 están en el inventario visual', () => {
     const v = A.imagenes.filter((i) => i.seguimiento).map((i) => i.id);
     expect(v).toEqual(['V1-01', 'V1-02', 'V1-03', 'V1-04', 'V1-05', 'V1-06', 'V1-07', 'V1-08', 'V1-09', 'V1-10']);

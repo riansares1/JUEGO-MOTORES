@@ -78,16 +78,23 @@ export function Mesa({ asig, progreso, setProgreso, onSalir, onTerminar }: Props
   }, []);
 
   const ventanas = useMemo(() => [...(exp?.documentos.map((d) => d.id) ?? []), ...(rayosAbierto && exp?.rayosX ? ['rx'] : [])], [exp, rayosAbierto]);
+  /** Disposición por defecto: lado a lado si caben (mín. 330 px cada una); si no, en cascada. */
+  const anchoVentana = useCallback(() => {
+    const ancho = escritorio.current?.clientWidth ?? 1000;
+    const n = Math.max(1, ventanas.length);
+    const lado = (ancho - 16 * (n + 1)) / n;
+    return lado >= 330 ? Math.min(ANCHO_VENTANA, lado) : Math.min(ANCHO_VENTANA, ancho - 32);
+  }, [ventanas]);
   const posDe = useCallback(
     (id: string): Pos => {
       if (posiciones[id]) return posiciones[id];
-      const i = ventanas.indexOf(id);
+      const i = Math.max(0, ventanas.indexOf(id));
       const ancho = escritorio.current?.clientWidth ?? 1000;
-      const w = Math.min(ANCHO_VENTANA, ancho * 0.92);
-      const x = Math.min(16 + i * (w + 16), Math.max(0, ancho - w - 8));
-      return { x, y: 16 + (x === 16 + i * (w + 16) ? 0 : i * 40) };
+      const w = anchoVentana();
+      const ladoALado = 16 + ventanas.length * (w + 16) <= ancho + 1;
+      return ladoALado ? { x: 16 + i * (w + 16), y: 16 } : { x: 16, y: 16 + i * 64 };
     },
-    [posiciones, ventanas],
+    [posiciones, ventanas, anchoVentana],
   );
 
   if (!exp) return null;
@@ -212,7 +219,7 @@ export function Mesa({ asig, progreso, setProgreso, onSalir, onTerminar }: Props
   const ventana = (id: string, titulo: string, emisor: string | undefined, cuerpo: ReactNode, extraCabecera?: ReactNode) => {
     const p = posDe(id);
     return (
-      <div key={id} className={`ventana-doc papel ${foco === id ? 'enfocada' : ''}`} style={{ left: p.x, top: p.y }} onPointerDown={() => setFoco(id)}>
+      <div key={id} className={`ventana-doc papel ${foco === id ? 'enfocada' : ''}`} style={{ left: p.x, top: p.y, width: anchoVentana() }} onPointerDown={() => setFoco(id)}>
         <div className="cabecera-doc" onPointerDown={(e) => empezarArrastre(id, e)} onPointerMove={moverArrastre} onPointerUp={soltarArrastre} onPointerCancel={soltarArrastre}>
           <span>{emisor ?? 'Documento'}</span>
           {extraCabecera ?? <span>⠿ arrastrar</span>}

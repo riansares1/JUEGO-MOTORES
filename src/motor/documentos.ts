@@ -155,7 +155,7 @@ export function existeRef(
   const { doc: idDoc, elem, zona } = descomponerRef(r);
   if (idDoc === 'rx') {
     // "rx@zona" → descomponerRef da doc="rx", elem=""; aceptamos también "rx:imagen@zona"
-    return !!rayosX && !!zona && zonasDeImagen(rayosX.imagen).includes(zona);
+    return !!rayosX && (!zona || zonasDeImagen(rayosX.imagen).includes(zona));
   }
   const doc = documentos.find((d) => d.id === idDoc);
   if (!doc) return false;
