@@ -1,9 +1,9 @@
 // Revisa los JSON de src/data antes de compilar: `npm run validar`.
 // Si algo está mal, lo explica y para el build.
 import { readFileSync, readdirSync } from 'node:fs'
-import { ZONAS } from '../src/diagramas/zonas.ts'
 
 const carpeta = new URL('../src/data/', import.meta.url)
+const ZONAS = JSON.parse(readFileSync(new URL('../src/diagramas/zonas.json', import.meta.url), 'utf8'))
 const archivos = readdirSync(carpeta).filter((f) => /^tema\d+\.json$/.test(f)).sort()
 
 const errores = []
