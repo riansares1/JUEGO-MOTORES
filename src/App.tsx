@@ -2,6 +2,7 @@
 import { useState } from 'react'
 import Inicio from './componentes/Inicio'
 import Ronda from './componentes/Ronda'
+import Galeria from './componentes/Galeria'
 import { barajar, cargarProgreso, elegirRonda, guardarProgreso, itemsFallados, registrarRespuesta, type Progreso } from './progreso'
 import { COLORES, TEMAS } from './temas'
 import type { Item } from './tipos'
@@ -40,6 +41,8 @@ export default function App() {
       return nuevo
     })
   }
+
+  if (window.location.hash === '#diagramas') return <Galeria />
 
   if (!modo) {
     return (

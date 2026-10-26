@@ -1,1 +1,1522 @@
-{"numero":2,"titulo":"(pendiente)","juego":"(pendiente)","descripcion":"","items":[]}
+{
+  "numero": 2,
+  "titulo": "Elementos constructivos",
+  "juego": "Taller",
+  "descripcion": "Reconoce cada pieza y para qué sirve",
+  "items": [
+    {
+      "id": "t2-m01",
+      "tipo": "diagrama",
+      "diagrama": "motor",
+      "modo": "toca",
+      "objetivo": "culata",
+      "enunciado": "Toca la culata.",
+      "explicacion": "Cierra la cara superior del bloque y aloja pipas, guías, bujías/inyectores y la distribución.",
+      "fuente": "Tema 2 · Sistema soporte: culata"
+    },
+    {
+      "id": "t2-m02",
+      "tipo": "diagrama",
+      "diagrama": "motor",
+      "modo": "toca",
+      "objetivo": "junta",
+      "enunciado": "Toca la junta de culata.",
+      "explicacion": "Da estanqueidad entre culata y bloque: sella la cámara e impide el paso del refrigerante.",
+      "fuente": "Tema 2 · Sistema soporte: junta de la culata"
+    },
+    {
+      "id": "t2-m03",
+      "tipo": "diagrama",
+      "diagrama": "motor",
+      "modo": "toca",
+      "objetivo": "tapa",
+      "enunciado": "Toca la tapa de culata.",
+      "explicacion": "Cierra el motor por arriba; va atornillada a la culata y suele llevar el tapón de llenado de aceite.",
+      "fuente": "Tema 2 · Sistema soporte: tapa de la culata"
+    },
+    {
+      "id": "t2-m04",
+      "tipo": "diagrama",
+      "diagrama": "motor",
+      "modo": "toca",
+      "objetivo": "carter",
+      "enunciado": "Toca el cárter.",
+      "explicacion": "Cierra el motor por abajo y aloja el aceite de lubricación; abajo lleva el tapón de vaciado.",
+      "fuente": "Tema 2 · Sistema soporte: cárter"
+    },
+    {
+      "id": "t2-m05",
+      "tipo": "diagrama",
+      "diagrama": "motor",
+      "modo": "toca",
+      "objetivo": "camisa",
+      "enunciado": "Toca la camisa.",
+      "explicacion": "Superficie sobre la que desliza el pistón. Puede ser integral (sin camisa), seca o húmeda.",
+      "fuente": "Tema 2 · Sistema soporte: bloque, tipos de camisa"
+    },
+    {
+      "id": "t2-m06",
+      "tipo": "diagrama",
+      "diagrama": "motor",
+      "modo": "toca",
+      "objetivo": "piston",
+      "enunciado": "Toca el pistón.",
+      "explicacion": "Transmite los esfuerzos de los gases, sella la cámara de combustión y pasa el calor a las paredes del cilindro.",
+      "fuente": "Tema 2 · Tren alternativo: pistón"
+    },
+    {
+      "id": "t2-m07",
+      "tipo": "diagrama",
+      "diagrama": "motor",
+      "modo": "toca",
+      "objetivo": "bulon",
+      "enunciado": "Toca el bulón.",
+      "explicacion": "Transmite la fuerza alternativa del pistón a la biela.",
+      "fuente": "Tema 2 · Tren alternativo: pistón, bulón"
+    },
+    {
+      "id": "t2-m08",
+      "tipo": "diagrama",
+      "diagrama": "motor",
+      "modo": "toca",
+      "objetivo": "biela",
+      "enunciado": "Toca la biela.",
+      "explicacion": "Transmite al cigüeñal los esfuerzos de los gases sobre el pistón: de alternativo a rotación.",
+      "fuente": "Tema 2 · Tren alternativo: biela"
+    },
+    {
+      "id": "t2-m09",
+      "tipo": "diagrama",
+      "diagrama": "motor",
+      "modo": "toca",
+      "objetivo": "arbol_levas",
+      "enunciado": "Toca el árbol de levas.",
+      "explicacion": "Levas (una por válvula) en un eje. En DOHC hay dos árboles de levas en la culata.",
+      "fuente": "Tema 2 · Distribución: partes"
+    },
+    {
+      "id": "t2-m10",
+      "tipo": "diagrama",
+      "diagrama": "motor",
+      "modo": "toca",
+      "objetivo": "valvula_adm",
+      "enunciado": "Toca la válvula de admisión.",
+      "explicacion": "Abre y cierra el conducto de admisión. Suele ser más grande que la de escape para que entre más aire.",
+      "fuente": "Tema 2 · Distribución: partes"
+    },
+    {
+      "id": "t2-m11",
+      "tipo": "diagrama",
+      "diagrama": "motor",
+      "modo": "toca",
+      "objetivo": "valvula_esc",
+      "enunciado": "Toca la válvula de escape.",
+      "explicacion": "Abre y cierra el conducto de escape; puede soportar hasta 800 ºC. Suele ser menor que la de admisión.",
+      "fuente": "Tema 2 · Distribución: partes"
+    },
+    {
+      "id": "t2-m12",
+      "tipo": "diagrama",
+      "diagrama": "motor",
+      "modo": "toca",
+      "objetivo": "pipa_adm",
+      "enunciado": "Toca la pipa de admisión.",
+      "explicacion": "Conducto de la culata por donde entra el aire (o mezcla) hacia la válvula de admisión.",
+      "fuente": "Tema 2 · Sistema soporte: culata"
+    },
+    {
+      "id": "t2-m13",
+      "tipo": "diagrama",
+      "diagrama": "motor",
+      "modo": "toca",
+      "objetivo": "pipa_esc",
+      "enunciado": "Toca la pipa de escape.",
+      "explicacion": "Conducto de la culata por donde salen los gases quemados tras la válvula de escape.",
+      "fuente": "Tema 2 · Sistema soporte: culata"
+    },
+    {
+      "id": "t2-m14",
+      "tipo": "diagrama",
+      "diagrama": "motor",
+      "modo": "toca",
+      "objetivo": "asiento",
+      "enunciado": "Toca un asiento de válvula.",
+      "explicacion": "Parte de la culata donde se apoya la cabeza de la válvula al cerrar.",
+      "fuente": "Tema 2 · Distribución: partes"
+    },
+    {
+      "id": "t2-m15",
+      "tipo": "diagrama",
+      "diagrama": "motor",
+      "modo": "identifica",
+      "objetivo": "bloque",
+      "opciones": [
+        "bloque",
+        "culata",
+        "camisa",
+        "carter"
+      ],
+      "enunciado": "¿Qué pieza está resaltada en naranja?",
+      "explicacion": "Soporta las fuerzas de las piezas móviles y de la combustión; además disipa calor, lubrica y sujeta auxiliares.",
+      "fuente": "Tema 2 · Sistema soporte: bloque"
+    },
+    {
+      "id": "t2-m16",
+      "tipo": "diagrama",
+      "diagrama": "motor",
+      "modo": "identifica",
+      "objetivo": "segmentos",
+      "opciones": [
+        "segmentos",
+        "camisa",
+        "junta",
+        "bulon"
+      ],
+      "enunciado": "¿Qué pieza está resaltada en naranja?",
+      "explicacion": "Anillos en el portasegmentos: los de compresión dan estanqueidad y los de engrase regulan el aceite.",
+      "fuente": "Tema 2 · Tren alternativo: pistón, segmentos"
+    },
+    {
+      "id": "t2-m17",
+      "tipo": "diagrama",
+      "diagrama": "motor",
+      "modo": "identifica",
+      "objetivo": "ciguenal",
+      "opciones": [
+        "ciguenal",
+        "biela",
+        "contrapeso",
+        "bulon"
+      ],
+      "enunciado": "¿Qué pieza está resaltada en naranja?",
+      "explicacion": "Convierte el movimiento lineal alternativo en rotativo continuo. Va alojado en la bancada.",
+      "fuente": "Tema 2 · Tren alternativo: cigüeñal"
+    },
+    {
+      "id": "t2-m18",
+      "tipo": "diagrama",
+      "diagrama": "motor",
+      "modo": "identifica",
+      "objetivo": "contrapeso",
+      "opciones": [
+        "contrapeso",
+        "ciguenal",
+        "carter",
+        "biela"
+      ],
+      "enunciado": "¿Qué pieza está resaltada en naranja?",
+      "explicacion": "Masa opuesta a la muñequilla que da estabilidad y equilibrio al cigüeñal.",
+      "fuente": "Tema 2 · Tren alternativo: cigüeñal, partes"
+    },
+    {
+      "id": "t2-m19",
+      "tipo": "diagrama",
+      "diagrama": "motor",
+      "modo": "identifica",
+      "objetivo": "taque",
+      "opciones": [
+        "taque",
+        "muelle",
+        "arbol_levas",
+        "guia"
+      ],
+      "enunciado": "¿Qué pieza está resaltada en naranja?",
+      "explicacion": "Empujador: convierte el giro de la leva en un movimiento de traslación hacia la válvula.",
+      "fuente": "Tema 2 · Distribución: partes"
+    },
+    {
+      "id": "t2-m20",
+      "tipo": "diagrama",
+      "diagrama": "motor",
+      "modo": "identifica",
+      "objetivo": "muelle",
+      "opciones": [
+        "muelle",
+        "taque",
+        "guia",
+        "valvula_adm"
+      ],
+      "enunciado": "¿Qué pieza está resaltada en naranja?",
+      "explicacion": "Los muelles mantienen la continuidad del movimiento y producen el cierre de las válvulas.",
+      "fuente": "Tema 2 · Distribución: partes"
+    },
+    {
+      "id": "t2-m21",
+      "tipo": "diagrama",
+      "diagrama": "motor",
+      "modo": "identifica",
+      "objetivo": "guia",
+      "opciones": [
+        "guia",
+        "asiento",
+        "muelle",
+        "taque"
+      ],
+      "enunciado": "¿Qué pieza está resaltada en naranja?",
+      "explicacion": "Parte de la culata que guía a la válvula en su movimiento.",
+      "fuente": "Tema 2 · Distribución: partes"
+    },
+    {
+      "id": "t2-m22",
+      "tipo": "diagrama",
+      "diagrama": "motor",
+      "modo": "identifica",
+      "objetivo": "bujia",
+      "opciones": [
+        "bujia",
+        "guia",
+        "valvula_esc",
+        "arbol_levas"
+      ],
+      "enunciado": "¿Qué pieza está resaltada en naranja?",
+      "explicacion": "La culata aloja bujías (MEP) o inyectores. Va en el centro, asomando a la cámara de combustión.",
+      "fuente": "Tema 2 · Sistema soporte: culata"
+    },
+    {
+      "id": "t2-m23",
+      "tipo": "diagrama",
+      "diagrama": "motor",
+      "modo": "identifica",
+      "objetivo": "junta",
+      "opciones": [
+        "junta",
+        "tapa",
+        "camisa",
+        "culata"
+      ],
+      "enunciado": "¿Qué pieza está resaltada en naranja?",
+      "explicacion": "Da estanqueidad entre culata y bloque: sella la cámara e impide el paso del refrigerante.",
+      "fuente": "Tema 2 · Sistema soporte: junta de la culata"
+    },
+    {
+      "id": "t2-m24",
+      "tipo": "diagrama",
+      "diagrama": "motor",
+      "modo": "identifica",
+      "objetivo": "pipa_esc",
+      "opciones": [
+        "pipa_esc",
+        "pipa_adm",
+        "culata",
+        "valvula_esc"
+      ],
+      "enunciado": "¿Qué pieza está resaltada en naranja?",
+      "explicacion": "Conducto de la culata por donde salen los gases quemados tras la válvula de escape.",
+      "fuente": "Tema 2 · Sistema soporte: culata"
+    },
+    {
+      "id": "t2-p01",
+      "tipo": "diagrama",
+      "diagrama": "piston",
+      "modo": "toca",
+      "objetivo": "cabeza",
+      "enunciado": "Toca la cabeza del pistón.",
+      "explicacion": "Forma parte de la cámara de combustión y recibe la presión. Es la zona más caliente y la de más espesor.",
+      "fuente": "Tema 2 · Tren alternativo: pistón, cabeza"
+    },
+    {
+      "id": "t2-p02",
+      "tipo": "diagrama",
+      "diagrama": "piston",
+      "modo": "toca",
+      "objetivo": "seg_compresion",
+      "enunciado": "Toca los segmentos de compresión.",
+      "explicacion": "Son los de arriba: dan estanqueidad a la cámara de combustión frente al bloque. Lo habitual es llevar 2.",
+      "fuente": "Tema 2 · Tren alternativo: pistón, segmentos"
+    },
+    {
+      "id": "t2-p03",
+      "tipo": "diagrama",
+      "diagrama": "piston",
+      "modo": "toca",
+      "objetivo": "seg_engrase",
+      "enunciado": "Toca el segmento de engrase (rascador).",
+      "explicacion": "Va debajo de los de compresión; limita y regula el consumo de aceite.",
+      "fuente": "Tema 2 · Tren alternativo: pistón, segmentos"
+    },
+    {
+      "id": "t2-p04",
+      "tipo": "diagrama",
+      "diagrama": "piston",
+      "modo": "toca",
+      "objetivo": "falda",
+      "enunciado": "Toca la falda del pistón.",
+      "explicacion": "Parte baja: guía el pistón, soporta las fuerzas transversales y pasa calor al cilindro y al aceite.",
+      "fuente": "Tema 2 · Tren alternativo: pistón, falda"
+    },
+    {
+      "id": "t2-p05",
+      "tipo": "diagrama",
+      "diagrama": "piston",
+      "modo": "toca",
+      "objetivo": "bulon",
+      "enunciado": "Toca el bulón.",
+      "explicacion": "El bulón transmite la fuerza alternativa del pistón a la biela.",
+      "fuente": "Tema 2 · Tren alternativo: pistón, bulón"
+    },
+    {
+      "id": "t2-p06",
+      "tipo": "diagrama",
+      "diagrama": "piston",
+      "modo": "identifica",
+      "objetivo": "portasegmentos",
+      "opciones": [
+        "portasegmentos",
+        "cabeza",
+        "falda",
+        "seg_compresion"
+      ],
+      "enunciado": "¿Qué parte del pistón está resaltada?",
+      "explicacion": "Portasegmentos: ranuras del pistón donde se alojan los segmentos. La primera va reforzada con acero.",
+      "fuente": "Tema 2 · Tren alternativo: pistón, portasegmentos"
+    },
+    {
+      "id": "t2-p07",
+      "tipo": "diagrama",
+      "diagrama": "piston",
+      "modo": "identifica",
+      "objetivo": "alojamiento_bulon",
+      "opciones": [
+        "alojamiento_bulon",
+        "bulon",
+        "falda",
+        "portasegmentos"
+      ],
+      "enunciado": "¿Qué parte del pistón está resaltada?",
+      "explicacion": "Es el alojamiento del bulón. La fuerza máxima sobre el bulón se produce en su superficie superior.",
+      "fuente": "Tema 2 · Tren alternativo: pistón, bulón"
+    },
+    {
+      "id": "t2-p08",
+      "tipo": "diagrama",
+      "diagrama": "piston",
+      "modo": "identifica",
+      "objetivo": "seg_engrase",
+      "opciones": [
+        "seg_engrase",
+        "seg_compresion",
+        "portasegmentos",
+        "cabeza"
+      ],
+      "enunciado": "¿Qué está resaltado?",
+      "explicacion": "Segmento de engrase o rascador: es el más bajo y regula el aceite. Los de compresión van encima.",
+      "fuente": "Tema 2 · Tren alternativo: pistón, segmentos"
+    },
+    {
+      "id": "t2-b01",
+      "tipo": "diagrama",
+      "diagrama": "biela",
+      "modo": "toca",
+      "objetivo": "pie",
+      "enunciado": "Toca el pie de la biela.",
+      "explicacion": "El pie es el extremo pequeño, unido al bulón (y por tanto al pistón).",
+      "fuente": "Tema 2 · Tren alternativo: biela, partes"
+    },
+    {
+      "id": "t2-b02",
+      "tipo": "diagrama",
+      "diagrama": "biela",
+      "modo": "toca",
+      "objetivo": "cabeza",
+      "enunciado": "Toca la cabeza de la biela.",
+      "explicacion": "La cabeza es el extremo grande, unido al cigüeñal (a la muñequilla).",
+      "fuente": "Tema 2 · Tren alternativo: biela, partes"
+    },
+    {
+      "id": "t2-b03",
+      "tipo": "diagrama",
+      "diagrama": "biela",
+      "modo": "identifica",
+      "objetivo": "cana",
+      "opciones": [
+        "cana",
+        "pie",
+        "cabeza",
+        "cojinete"
+      ],
+      "enunciado": "¿Qué parte de la biela está resaltada?",
+      "explicacion": "Caña o cuerpo: une cabeza y pie. Es de doble T porque resiste más a flexión y pandeo y es más ligera.",
+      "fuente": "Tema 2 · Tren alternativo: biela, partes"
+    },
+    {
+      "id": "t2-b04",
+      "tipo": "diagrama",
+      "diagrama": "biela",
+      "modo": "identifica",
+      "objetivo": "cojinete",
+      "opciones": [
+        "cojinete",
+        "cabeza",
+        "pie",
+        "cana"
+      ],
+      "enunciado": "¿Qué está resaltado dentro de la cabeza de biela?",
+      "explicacion": "Cojinete: se interpone entre piezas con movimiento relativo para reducir el rozamiento y favorecer la lubricación.",
+      "fuente": "Tema 2 · Tren alternativo: biela, cojinetes"
+    },
+    {
+      "id": "t2-c01",
+      "tipo": "diagrama",
+      "diagrama": "ciguenal",
+      "modo": "toca",
+      "objetivo": "munequilla",
+      "enunciado": "Toca las muñequillas del cigüeñal.",
+      "explicacion": "Muñequilla (codo): donde se monta la cabeza de biela. Hay tantas como bielas (y cilindros).",
+      "fuente": "Tema 2 · Tren alternativo: cigüeñal, partes"
+    },
+    {
+      "id": "t2-c02",
+      "tipo": "diagrama",
+      "diagrama": "ciguenal",
+      "modo": "toca",
+      "objetivo": "apoyo",
+      "enunciado": "Toca los apoyos (muñones principales).",
+      "explicacion": "Los apoyos son el eje de giro: van en la bancada del bloque sustentando el cigüeñal.",
+      "fuente": "Tema 2 · Tren alternativo: cigüeñal, partes"
+    },
+    {
+      "id": "t2-c03",
+      "tipo": "diagrama",
+      "diagrama": "ciguenal",
+      "modo": "toca",
+      "objetivo": "contrapeso",
+      "enunciado": "Toca los contrapesos.",
+      "explicacion": "Masas diametralmente opuestas a las muñequillas que dan estabilidad y equilibrio.",
+      "fuente": "Tema 2 · Tren alternativo: cigüeñal, partes"
+    },
+    {
+      "id": "t2-c04",
+      "tipo": "diagrama",
+      "diagrama": "ciguenal",
+      "modo": "toca",
+      "objetivo": "volante",
+      "enunciado": "Toca el volante de inercia.",
+      "explicacion": "Disco de gran masa en un extremo: almacena energía y se opone a las variaciones de giro. Al lado va el motor de arranque.",
+      "fuente": "Tema 2 · Tren alternativo: cigüeñal, volante de inercia"
+    },
+    {
+      "id": "t2-c05",
+      "tipo": "diagrama",
+      "diagrama": "ciguenal",
+      "modo": "identifica",
+      "objetivo": "brazo",
+      "opciones": [
+        "brazo",
+        "contrapeso",
+        "apoyo",
+        "munequilla"
+      ],
+      "enunciado": "¿Qué parte del cigüeñal está resaltada?",
+      "explicacion": "Brazos (palas, caras): unen muñequillas y apoyos. En algunos se añaden contrapesos.",
+      "fuente": "Tema 2 · Tren alternativo: cigüeñal, partes"
+    },
+    {
+      "id": "t2-c06",
+      "tipo": "diagrama",
+      "diagrama": "ciguenal",
+      "modo": "identifica",
+      "objetivo": "amortiguador",
+      "opciones": [
+        "amortiguador",
+        "volante",
+        "apoyo",
+        "contrapeso"
+      ],
+      "enunciado": "¿Qué es lo resaltado en el extremo delantero?",
+      "explicacion": "Amortiguador de vibraciones (damper): atenúa las deformaciones torsionales. Forma parte de la polea delantera.",
+      "fuente": "Tema 2 · Tren alternativo: cigüeñal, amortiguador de vibraciones"
+    },
+    {
+      "id": "t2-d01",
+      "tipo": "diagrama",
+      "diagrama": "ohv",
+      "modo": "pregunta",
+      "opcionesTexto": [
+        "OHV",
+        "OHC",
+        "DOHC"
+      ],
+      "correcta": 0,
+      "enunciado": "¿Qué sistema de distribución es este?",
+      "explicacion": "OHV: el árbol de levas está en el bloque y el movimiento sube por una varilla hasta el balancín. Está en desuso.",
+      "fuente": "Tema 2 · Distribución: tipos"
+    },
+    {
+      "id": "t2-d02",
+      "tipo": "diagrama",
+      "diagrama": "ohc",
+      "modo": "pregunta",
+      "opcionesTexto": [
+        "OHV",
+        "OHC",
+        "DOHC"
+      ],
+      "correcta": 1,
+      "enunciado": "¿Qué sistema de distribución es este?",
+      "explicacion": "OHC: un árbol de levas situado en la culata. No hay varillas.",
+      "fuente": "Tema 2 · Distribución: tipos"
+    },
+    {
+      "id": "t2-d03",
+      "tipo": "diagrama",
+      "diagrama": "dohc",
+      "modo": "pregunta",
+      "opcionesTexto": [
+        "OHV",
+        "OHC",
+        "DOHC"
+      ],
+      "correcta": 2,
+      "enunciado": "¿Qué sistema de distribución es este?",
+      "explicacion": "DOHC: doble árbol de levas en la culata. Es el más utilizado en motores multiválvulas.",
+      "fuente": "Tema 2 · Distribución: tipos"
+    },
+    {
+      "id": "t2-d04",
+      "tipo": "diagrama",
+      "diagrama": "ohv",
+      "modo": "toca",
+      "objetivo": "varilla",
+      "enunciado": "En este OHV, toca la varilla.",
+      "explicacion": "La varilla solo existe en OHV: transmite el movimiento del empujador (taqué) al balancín.",
+      "fuente": "Tema 2 · Distribución: partes"
+    },
+    {
+      "id": "t2-d05",
+      "tipo": "diagrama",
+      "diagrama": "ohv",
+      "modo": "toca",
+      "objetivo": "balancin",
+      "enunciado": "En este OHV, toca el balancín.",
+      "explicacion": "El balancín es una palanca que amplifica el levantamiento de la válvula respecto al de la leva.",
+      "fuente": "Tema 2 · Distribución: partes"
+    },
+    {
+      "id": "t2-d06",
+      "tipo": "diagrama",
+      "diagrama": "ohv",
+      "modo": "toca",
+      "objetivo": "arbol_levas",
+      "enunciado": "En este OHV, toca el árbol de levas.",
+      "explicacion": "En OHV el árbol de levas está situado en el bloque del motor; por eso necesita varillas.",
+      "fuente": "Tema 2 · Distribución: tipos"
+    },
+    {
+      "id": "t2-d07",
+      "tipo": "diagrama",
+      "diagrama": "ohv",
+      "modo": "identifica",
+      "objetivo": "taque",
+      "opciones": [
+        "taque",
+        "varilla",
+        "balancin",
+        "arbol_levas"
+      ],
+      "enunciado": "¿Qué pieza está resaltada?",
+      "explicacion": "El taqué (empujador) convierte el giro de la leva en traslación; en OHV empuja la varilla.",
+      "fuente": "Tema 2 · Distribución: partes"
+    },
+    {
+      "id": "t2-d08",
+      "tipo": "diagrama",
+      "diagrama": "dohc",
+      "modo": "toca",
+      "objetivo": "taque",
+      "enunciado": "En este DOHC, toca los taqués.",
+      "explicacion": "En el DOHC la leva empuja directamente el taqué, que a su vez mueve la válvula.",
+      "fuente": "Tema 2 · Distribución: partes"
+    },
+    {
+      "id": "t2-d09",
+      "tipo": "diagrama",
+      "diagrama": "ohc",
+      "modo": "identifica",
+      "objetivo": "muelle",
+      "opciones": [
+        "muelle",
+        "balancin",
+        "valvula",
+        "arbol_levas"
+      ],
+      "enunciado": "¿Qué pieza está resaltada?",
+      "explicacion": "El muelle produce el cierre de la válvula y mantiene la continuidad del movimiento de la distribución.",
+      "fuente": "Tema 2 · Distribución: partes"
+    },
+    {
+      "id": "t2-01",
+      "tipo": "clasificar",
+      "enunciado": "¿A qué sistema estructural pertenece cada pieza?",
+      "cajas": [
+        "Sistema soporte",
+        "Tren alternativo",
+        "Distribución"
+      ],
+      "tarjetas": [
+        {
+          "texto": "Bloque",
+          "caja": 0
+        },
+        {
+          "texto": "Cárter",
+          "caja": 0
+        },
+        {
+          "texto": "Junta de culata",
+          "caja": 0
+        },
+        {
+          "texto": "Pistón",
+          "caja": 1
+        },
+        {
+          "texto": "Biela",
+          "caja": 1
+        },
+        {
+          "texto": "Cigüeñal",
+          "caja": 1
+        },
+        {
+          "texto": "Árbol de levas",
+          "caja": 2
+        },
+        {
+          "texto": "Válvula",
+          "caja": 2
+        }
+      ],
+      "explicacion": "Soporte: bloque, culata, junta, tapa y cárter. Tren alternativo: pistón-biela-cigüeñal. Distribución: levas, taqués, válvulas…",
+      "fuente": "Tema 2 · Elementos constructivos de un MCIA"
+    },
+    {
+      "id": "t2-02",
+      "tipo": "vf",
+      "enunciado": "Refrigeración, lubricación, combustible, encendido (MEP) y renovación de carga son sistemas auxiliares.",
+      "correcta": true,
+      "explicacion": "Verdadero. Los 3 sistemas estructurales son soporte, tren alternativo y distribución; el resto son auxiliares.",
+      "fuente": "Tema 2 · Elementos constructivos de un MCIA"
+    },
+    {
+      "id": "t2-03",
+      "tipo": "emparejar",
+      "enunciado": "Une cada pieza del sistema soporte con su función.",
+      "pares": [
+        {
+          "izq": "Bloque",
+          "der": "Soportar las fuerzas de las piezas móviles y de la combustión"
+        },
+        {
+          "izq": "Culata",
+          "der": "Cerrar la cara superior del bloque"
+        },
+        {
+          "izq": "Junta de culata",
+          "der": "Dar estanqueidad entre culata y bloque"
+        },
+        {
+          "izq": "Tapa de culata",
+          "der": "Cerrar por arriba; lleva el tapón de llenado de aceite"
+        },
+        {
+          "izq": "Cárter",
+          "der": "Cerrar por abajo y alojar el aceite"
+        }
+      ],
+      "explicacion": "De abajo arriba: cárter (aceite), bloque (fuerzas), junta (estanqueidad), culata (cierre del bloque) y tapa (cierre superior).",
+      "fuente": "Tema 2 · Sistema soporte"
+    },
+    {
+      "id": "t2-04",
+      "tipo": "emparejar",
+      "enunciado": "Une cada pieza con su material.",
+      "pares": [
+        {
+          "izq": "Bloque",
+          "der": "Fundición gris o aleación de aluminio (Alusil)"
+        },
+        {
+          "izq": "Pistón",
+          "der": "Aleaciones ligeras de aluminio (Al-Si o Al-Cu)"
+        },
+        {
+          "izq": "Biela",
+          "der": "Aceros al carbono aleados con Cr-Ni o Mn-Si"
+        },
+        {
+          "izq": "Tapa de culata",
+          "der": "Aluminio o plástico"
+        },
+        {
+          "izq": "Cárter",
+          "der": "Aluminio o chapa"
+        }
+      ],
+      "explicacion": "La biela es de acero porque soporta gran tensión; el pistón, de aluminio ligero; tapa y cárter, materiales sencillos.",
+      "fuente": "Tema 2 · Sistema soporte y tren alternativo: materiales"
+    },
+    {
+      "id": "t2-05",
+      "tipo": "emparejar",
+      "enunciado": "Une cada pieza con su material.",
+      "pares": [
+        {
+          "izq": "Junta de culata",
+          "der": "Multilámina (acero inoxidable + fibra) o fibras"
+        },
+        {
+          "izq": "Culata",
+          "der": "Fundición de hierro con Cr y Ni o aleación de aluminio"
+        },
+        {
+          "izq": "Cojinetes",
+          "der": "Varias capas: acero aleado + Cu-Pb + Sn-Pb"
+        },
+        {
+          "izq": "Falda del pistón",
+          "der": "Fundición con tratamiento de templado"
+        }
+      ],
+      "explicacion": "Junta multilámina o de fibras; culata de fundición aleada o aluminio; cojinetes en capas; falda de fundición templada.",
+      "fuente": "Tema 2 · Materiales de junta, culata, cojinetes y falda"
+    },
+    {
+      "id": "t2-06",
+      "tipo": "emparejar",
+      "enunciado": "Une cada pieza del tren alternativo con su función.",
+      "pares": [
+        {
+          "izq": "Pistón",
+          "der": "Sellar la cámara y transmitir el calor al cilindro"
+        },
+        {
+          "izq": "Bulón",
+          "der": "Transmitir la fuerza alternativa a la biela"
+        },
+        {
+          "izq": "Biela",
+          "der": "Transmitir al cigüeñal los esfuerzos de los gases"
+        },
+        {
+          "izq": "Volante de inercia",
+          "der": "Almacenar energía y oponerse a variaciones de giro"
+        },
+        {
+          "izq": "Amortiguador de vibraciones",
+          "der": "Atenuar las deformaciones torsionales del cigüeñal"
+        }
+      ],
+      "explicacion": "La fuerza de los gases va pistón → bulón → biela → cigüeñal. Volante y amortiguador van en los extremos del cigüeñal.",
+      "fuente": "Tema 2 · Tren alternativo"
+    },
+    {
+      "id": "t2-07",
+      "tipo": "emparejar",
+      "enunciado": "Une cada elemento de la distribución con su función.",
+      "pares": [
+        {
+          "izq": "Árbol de levas",
+          "der": "Levas (una por válvula) soportadas en un eje"
+        },
+        {
+          "izq": "Taqué",
+          "der": "Convierte el giro de la leva en traslación"
+        },
+        {
+          "izq": "Muelles",
+          "der": "Producen el cierre de las válvulas"
+        },
+        {
+          "izq": "Balancín",
+          "der": "Palanca que amplifica el levantamiento de la válvula"
+        },
+        {
+          "izq": "Varilla",
+          "der": "Solo en OHV: lleva el movimiento del empujador al balancín"
+        }
+      ],
+      "explicacion": "Leva → taqué → (varilla en OHV) → balancín → válvula; los muelles la vuelven a cerrar.",
+      "fuente": "Tema 2 · Distribución: partes"
+    },
+    {
+      "id": "t2-08",
+      "tipo": "emparejar",
+      "enunciado": "Une cada elemento con su función.",
+      "pares": [
+        {
+          "izq": "Válvula",
+          "der": "Abre y cierra los conductos de admisión y escape"
+        },
+        {
+          "izq": "Asiento",
+          "der": "Parte de la culata donde apoya la cabeza de la válvula"
+        },
+        {
+          "izq": "Guía",
+          "der": "Parte de la culata que guía la válvula en su movimiento"
+        },
+        {
+          "izq": "Tapas de muelle y semiconos",
+          "der": "Transmiten la fuerza al vástago de la válvula"
+        }
+      ],
+      "explicacion": "Asiento y guía son partes de la culata; tapas y semiconos unen el muelle con el vástago de la válvula.",
+      "fuente": "Tema 2 · Distribución: partes"
+    },
+    {
+      "id": "t2-09",
+      "tipo": "emparejar",
+      "enunciado": "Une cada parte del pistón con su función.",
+      "pares": [
+        {
+          "izq": "Segmento de compresión",
+          "der": "Estanqueidad de la cámara frente al bloque"
+        },
+        {
+          "izq": "Segmento de engrase",
+          "der": "Limita y regula el consumo de aceite"
+        },
+        {
+          "izq": "Portasegmentos",
+          "der": "Ranuras donde se alojan los segmentos"
+        },
+        {
+          "izq": "Falda",
+          "der": "Guía el pistón y soporta fuerzas transversales"
+        }
+      ],
+      "explicacion": "Además, los segmentos evacúan a las camisas el calor que absorbe el pistón en la combustión.",
+      "fuente": "Tema 2 · Tren alternativo: pistón, partes"
+    },
+    {
+      "id": "t2-10",
+      "tipo": "clasificar",
+      "enunciado": "Fuerzas sobre el bloque: ¿de origen mecánico o térmico?",
+      "cajas": [
+        "Mecánico",
+        "Térmico"
+      ],
+      "tarjetas": [
+        {
+          "texto": "Compresión del aire",
+          "caja": 0
+        },
+        {
+          "texto": "Fuerzas de la combustión",
+          "caja": 0
+        },
+        {
+          "texto": "Inercia de las partes móviles",
+          "caja": 0
+        },
+        {
+          "texto": "Temperaturas de la combustión",
+          "caja": 1
+        },
+        {
+          "texto": "Fricción del pistón dentro del cilindro",
+          "caja": 1
+        },
+        {
+          "texto": "Pueden causar pistoneo y gripaje",
+          "caja": 1
+        }
+      ],
+      "explicacion": "Mecánicas: compresión, combustión e inercia. Térmicas: temperatura de combustión y fricción del pistón (pistoneo, gripaje).",
+      "fuente": "Tema 2 · Bloque: fuerzas a las que está sometido"
+    },
+    {
+      "id": "t2-11",
+      "tipo": "test",
+      "enunciado": "¿En qué parte del bloque va alojado el cigüeñal?",
+      "opciones": [
+        "En la bancada",
+        "En el bloque de cilindros",
+        "En la culata",
+        "En la tapa de culata"
+      ],
+      "correcta": 0,
+      "explicacion": "El bloque tiene bloque de cilindros, bancada superior y bancada inferior; en la bancada se aloja el cigüeñal.",
+      "fuente": "Tema 2 · Bloque: funciones y partes"
+    },
+    {
+      "id": "t2-12",
+      "tipo": "test",
+      "enunciado": "Además de soportar fuerzas, ¿qué funciones adicionales tiene el bloque?",
+      "opciones": [
+        "Disipar calor, lubricar y soportar los auxiliares",
+        "Alojar las pipas de admisión y escape",
+        "Alojar las guías de válvula y las bujías",
+        "Guardar el aceite de lubricación"
+      ],
+      "correcta": 0,
+      "explicacion": "Bloque: disipación del calor, lubricación y soporte de auxiliares. Pipas, guías y bujías van en la culata; el aceite, en el cárter.",
+      "fuente": "Tema 2 · Bloque: funciones y partes"
+    },
+    {
+      "id": "t2-13",
+      "tipo": "clasificar",
+      "enunciado": "¿Qué tipo de camisa es?",
+      "cajas": [
+        "Integral (sin camisa)",
+        "Seca",
+        "Húmeda"
+      ],
+      "tarjetas": [
+        {
+          "texto": "El cilindro se mecaniza directamente en el bloque",
+          "caja": 0
+        },
+        {
+          "texto": "Recubrimiento de Nikasil",
+          "caja": 0
+        },
+        {
+          "texto": "Pared delgada embutida a presión",
+          "caja": 1
+        },
+        {
+          "texto": "Sin contacto con el refrigerante",
+          "caja": 1
+        },
+        {
+          "texto": "Pared más gruesa",
+          "caja": 2
+        },
+        {
+          "texto": "Contacto directo con el refrigerante",
+          "caja": 2
+        },
+        {
+          "texto": "Juntas tóricas para que no pase el aceite",
+          "caja": 2
+        }
+      ],
+      "explicacion": "Integral: cilindro en el propio bloque (Nikasil). Seca: fina, sin tocar refrigerante. Húmeda: gruesa, bañada en refrigerante.",
+      "fuente": "Tema 2 · Bloque: tipos de camisa"
+    },
+    {
+      "id": "t2-14",
+      "tipo": "vf",
+      "enunciado": "El Alusil es una aleación de aluminio y silicio, más resistente al desgaste, usada en bloques modernos.",
+      "correcta": true,
+      "explicacion": "Verdadero. El bloque es de fundición gris o aleación de aluminio; en motores modernos, de Alusil.",
+      "fuente": "Tema 2 · Bloque: factores de diseño, material"
+    },
+    {
+      "id": "t2-15",
+      "tipo": "vf",
+      "enunciado": "El Nikasil se usa en la camisa húmeda para evitar el contacto con el refrigerante.",
+      "correcta": false,
+      "explicacion": "Falso: el Nikasil es un recubrimiento de la camisa integral (sin camisa) que aumenta la resistencia al desgaste.",
+      "fuente": "Tema 2 · Bloque: tipos de camisa"
+    },
+    {
+      "id": "t2-16",
+      "tipo": "test",
+      "enunciado": "Al aumentar la cilindrada, ¿por qué se aumenta también el número de cilindros?",
+      "opciones": [
+        "Para minimizar las fuerzas de inercia",
+        "Para aumentar la relación de compresión",
+        "Para no necesitar junta de culata",
+        "Para poder refrigerar por aire"
+      ],
+      "correcta": 0,
+      "explicacion": "Repartir la cilindrada en más cilindros hace las piezas móviles más pequeñas y minimiza las fuerzas de inercia.",
+      "fuente": "Tema 2 · Bloque: factores de diseño, configuración"
+    },
+    {
+      "id": "t2-17",
+      "tipo": "test",
+      "enunciado": "¿Qué es el «cosido» de culata?",
+      "opciones": [
+        "Tornillos que roscan en el bloque para sellar el conjunto junta/culata",
+        "Una soldadura entre culata y bloque",
+        "La junta líquida entre bloque y cárter",
+        "El mecanizado de las guías de válvula"
+      ],
+      "correcta": 0,
+      "explicacion": "La culata se «cose» al bloque con tornillos que roscan en su parte superior y aprietan la junta.",
+      "fuente": "Tema 2 · Bloque: factores de diseño, cosido de culata"
+    },
+    {
+      "id": "t2-18",
+      "tipo": "test",
+      "enunciado": "¿A qué esfuerzos está sometida la culata?",
+      "opciones": [
+        "Mecánicos, térmicos y químicos",
+        "Solo mecánicos",
+        "Solo térmicos",
+        "Mecánicos y eléctricos"
+      ],
+      "correcta": 0,
+      "explicacion": "La culata sufre esfuerzos mecánicos, térmicos y químicos (está en contacto con la combustión).",
+      "fuente": "Tema 2 · Culata: funciones y esfuerzos"
+    },
+    {
+      "id": "t2-19",
+      "tipo": "vf",
+      "enunciado": "La cámara de combustión la forma la culata junto con cada pistón y cilindro (o tallada en la cabeza del pistón).",
+      "correcta": true,
+      "explicacion": "Verdadero: es una de las funciones adicionales de la culata.",
+      "fuente": "Tema 2 · Culata: funciones"
+    },
+    {
+      "id": "t2-20",
+      "tipo": "test",
+      "enunciado": "Usar culatines que cubren uno o dos cilindros…",
+      "opciones": [
+        "Mejora el cierre y la refrigeración, pero aumenta tamaño y peso",
+        "Reduce el tamaño y el peso del motor",
+        "Permite eliminar la junta de culata",
+        "Obliga a usar un solo árbol de levas"
+      ],
+      "correcta": 0,
+      "explicacion": "Número de cilindros cubiertos: los culatines mejoran cierre y refrigeración a costa de más tamaño y peso.",
+      "fuente": "Tema 2 · Culata: factores de diseño"
+    },
+    {
+      "id": "t2-21",
+      "tipo": "test",
+      "enunciado": "¿Qué ventaja tiene una culata de aleación de aluminio frente a una de fundición de hierro?",
+      "opciones": [
+        "Más conductividad térmica y menor peso",
+        "Más resistencia a los esfuerzos químicos",
+        "No necesita refrigeración",
+        "No necesita junta de culata"
+      ],
+      "correcta": 0,
+      "explicacion": "Material de culata: fundición de hierro con Cr y Ni, o aluminio (más conductividad térmica y menos peso).",
+      "fuente": "Tema 2 · Culata: factores de diseño, material"
+    },
+    {
+      "id": "t2-22",
+      "tipo": "clasificar",
+      "enunciado": "¿Función de la culata o del bloque?",
+      "cajas": [
+        "Culata",
+        "Bloque"
+      ],
+      "tarjetas": [
+        {
+          "texto": "Cerrar la cara superior del bloque",
+          "caja": 0
+        },
+        {
+          "texto": "Alojar pipas de admisión y escape",
+          "caja": 0
+        },
+        {
+          "texto": "Alojar guías de válvula, inyectores y bujías",
+          "caja": 0
+        },
+        {
+          "texto": "Alojar el sistema de distribución",
+          "caja": 0
+        },
+        {
+          "texto": "Alojar el cigüeñal en la bancada",
+          "caja": 1
+        },
+        {
+          "texto": "Soportar fuerzas de piezas alternativas y rotativas",
+          "caja": 1
+        },
+        {
+          "texto": "Soporte de los elementos auxiliares",
+          "caja": 1
+        }
+      ],
+      "explicacion": "La culata cierra por arriba y aloja pipas, guías, bujías y distribución. El bloque soporta fuerzas, aloja el cigüeñal y sujeta auxiliares.",
+      "fuente": "Tema 2 · Bloque y culata: funciones"
+    },
+    {
+      "id": "t2-23",
+      "tipo": "vf",
+      "enunciado": "El cárter se une al bloque con tornillos y junta líquida, y en su parte inferior lleva el tapón de vaciado del aceite.",
+      "correcta": true,
+      "explicacion": "Verdadero. Además cierra el motor por abajo y aloja el aceite. Es de aluminio o chapa.",
+      "fuente": "Tema 2 · Sistema soporte: cárter"
+    },
+    {
+      "id": "t2-24",
+      "tipo": "vf",
+      "enunciado": "La tapa de culata suele llevar el conducto de desgasificación de los vapores de aceite.",
+      "correcta": true,
+      "explicacion": "Verdadero: suele llevar el tapón de llenado de aceite y el conducto de desgasificación. Es de aluminio o plástico.",
+      "fuente": "Tema 2 · Sistema soporte: tapa de la culata"
+    },
+    {
+      "id": "t2-25",
+      "tipo": "test",
+      "enunciado": "Según los apuntes, ¿qué presión y temperatura aproximadas soporta un pistón?",
+      "opciones": [
+        "50 bar y 350 ºC",
+        "5 bar y 800 ºC",
+        "500 bar y 35 ºC",
+        "50 bar y 800 ºC"
+      ],
+      "correcta": 0,
+      "explicacion": "Mecánicas: presiones de unos 50 bar. Térmicas: dilataciones con temperaturas de unos 350 ºC. (Los 800 ºC son de la válvula de escape).",
+      "fuente": "Tema 2 · Pistón: fuerzas a las que está sometido"
+    },
+    {
+      "id": "t2-26",
+      "tipo": "clasificar",
+      "enunciado": "Fuerzas sobre el pistón: ¿mecánicas o térmicas?",
+      "cajas": [
+        "Mecánicas",
+        "Térmicas"
+      ],
+      "tarjetas": [
+        {
+          "texto": "Presión de los gases",
+          "caja": 0
+        },
+        {
+          "texto": "Reacción del bulón contra su alojamiento",
+          "caja": 0
+        },
+        {
+          "texto": "Rozamiento contra el cilindro",
+          "caja": 0
+        },
+        {
+          "texto": "Fuerzas de inercia",
+          "caja": 0
+        },
+        {
+          "texto": "Dilataciones por la temperatura",
+          "caja": 1
+        },
+        {
+          "texto": "Se compensan con rebajes o cabeza ovalada",
+          "caja": 1
+        }
+      ],
+      "explicacion": "Las térmicas vienen de la dilatación; por eso el pistón se mecaniza teniéndola en cuenta (rebajes, cabeza ovalada, pletinas de acero).",
+      "fuente": "Tema 2 · Pistón: fuerzas a las que está sometido"
+    },
+    {
+      "id": "t2-27",
+      "tipo": "test",
+      "enunciado": "¿Por qué el pistón debe ser ligero?",
+      "opciones": [
+        "Para disminuir las fuerzas de inercia",
+        "Para evacuar el calor con facilidad",
+        "Para ser silencioso",
+        "Para aumentar la relación de compresión"
+      ],
+      "correcta": 0,
+      "explicacion": "Requisitos: ligero (menos inercia), rígido, silencioso, duradero, resistente y con alta conductividad térmica (evacuar calor).",
+      "fuente": "Tema 2 · Pistón: requisitos"
+    },
+    {
+      "id": "t2-28",
+      "tipo": "vf",
+      "enunciado": "El pistón debe tener baja conductividad térmica para no calentarse.",
+      "correcta": false,
+      "explicacion": "Falso: necesita ALTA conductividad térmica para evacuar el calor fácilmente hacia las paredes del cilindro.",
+      "fuente": "Tema 2 · Pistón: requisitos"
+    },
+    {
+      "id": "t2-29",
+      "tipo": "test",
+      "enunciado": "¿Por qué la cabeza es la zona de más espesor del pistón?",
+      "opciones": [
+        "Porque recibe la presión de combustión y su temperatura es máxima",
+        "Porque aloja el bulón",
+        "Porque guía el pistón dentro del cilindro",
+        "Porque lleva el segmento de engrase"
+      ],
+      "correcta": 0,
+      "explicacion": "La cabeza recibe la tensión de la combustión y es la zona más caliente; debe dejar pasar el calor hacia segmentos y falda.",
+      "fuente": "Tema 2 · Pistón: cabeza"
+    },
+    {
+      "id": "t2-30",
+      "tipo": "vf",
+      "enunciado": "La primera ranura del portasegmentos va reforzada con acero porque soporta más temperatura.",
+      "correcta": true,
+      "explicacion": "Verdadero: es la más cercana a la combustión.",
+      "fuente": "Tema 2 · Pistón: portasegmentos"
+    },
+    {
+      "id": "t2-31",
+      "tipo": "test",
+      "enunciado": "¿Cuántos segmentos lleva habitualmente un pistón?",
+      "opciones": [
+        "3 (2+1) o 4 (2+2)",
+        "Solo 1",
+        "6 (3+3)",
+        "Uno por cada válvula"
+      ],
+      "correcta": 0,
+      "explicacion": "Lo habitual son 3 (2 de compresión + 1 de engrase) o 4 (2 + 2).",
+      "fuente": "Tema 2 · Pistón: segmentos"
+    },
+    {
+      "id": "t2-32",
+      "tipo": "test",
+      "enunciado": "En el montaje de bulón flotante…",
+      "opciones": [
+        "El bulón gira libremente en el pistón y en la biela",
+        "El bulón solo puede girar en el pistón",
+        "El bulón solo puede girar en la biela",
+        "El bulón no puede girar"
+      ],
+      "correcta": 0,
+      "explicacion": "Flotante: gira libre en pistón y biela. Fijo a la biela: solo gira libremente en el pistón.",
+      "fuente": "Tema 2 · Pistón: bulón"
+    },
+    {
+      "id": "t2-33",
+      "tipo": "vf",
+      "enunciado": "La fuerza máxima sobre el bulón se produce en la superficie inferior de su alojamiento.",
+      "correcta": false,
+      "explicacion": "Falso: se produce en la superficie SUPERIOR del alojamiento (la presión de los gases empuja desde arriba).",
+      "fuente": "Tema 2 · Pistón: bulón"
+    },
+    {
+      "id": "t2-34",
+      "tipo": "test",
+      "enunciado": "¿Por qué la caña de la biela tiene sección en doble T?",
+      "opciones": [
+        "Resiste más a flexión y pandeo y es más ligera",
+        "Para alojar el bulón",
+        "Para dejar pasar el refrigerante",
+        "Para reducir el rozamiento con el cilindro"
+      ],
+      "correcta": 0,
+      "explicacion": "La biela debe tener la máxima rigidez con el mínimo peso: la doble T lo consigue.",
+      "fuente": "Tema 2 · Biela: partes"
+    },
+    {
+      "id": "t2-35",
+      "tipo": "test",
+      "enunciado": "¿Qué fuerzas soporta principalmente la biela?",
+      "opciones": [
+        "Mecánicas: presión de gases, inercias y fuerzas centrífugas",
+        "Térmicas: dilataciones a 350 ºC",
+        "Químicas por el contacto con el aceite",
+        "Solo el peso del pistón"
+      ],
+      "correcta": 0,
+      "explicacion": "Principalmente de origen mecánico: presión de los gases, inercias alternativas y rotativas y fuerzas centrífugas.",
+      "fuente": "Tema 2 · Biela: fuerzas"
+    },
+    {
+      "id": "t2-36",
+      "tipo": "test",
+      "enunciado": "¿Qué cualidad deben tener los cojinetes?",
+      "opciones": [
+        "Ser deformables para adaptarse a muñequillas y apoyos",
+        "Ser totalmente rígidos",
+        "Tener baja resistencia térmica",
+        "Impedir el paso del aceite"
+      ],
+      "correcta": 0,
+      "explicacion": "Cojinetes: alta resistencia a fatiga, corrosión y temperatura, y deformables. Llevan un orificio para que pase el aceite.",
+      "fuente": "Tema 2 · Biela: cojinetes"
+    },
+    {
+      "id": "t2-37",
+      "tipo": "vf",
+      "enunciado": "Los cojinetes más importantes son los de cabeza de biela y los de apoyos del cigüeñal.",
+      "correcta": true,
+      "explicacion": "Verdadero: son los puntos con más movimiento relativo y carga.",
+      "fuente": "Tema 2 · Biela: cojinetes"
+    },
+    {
+      "id": "t2-38",
+      "tipo": "test",
+      "enunciado": "¿Qué esfuerzos soporta el cigüeñal?",
+      "opciones": [
+        "Flexión y torsión combinados y dinámicos",
+        "Solo compresión",
+        "Solo esfuerzos térmicos",
+        "Solo tracción"
+      ],
+      "correcta": 0,
+      "explicacion": "Flexión y torsión, producidos por la presión de combustión y las fuerzas de inercia. Se lubrica por canales interiores.",
+      "fuente": "Tema 2 · Cigüeñal: fuerzas"
+    },
+    {
+      "id": "t2-39",
+      "tipo": "vf",
+      "enunciado": "Un cigüeñal tiene tantas muñequillas como bielas (y cilindros).",
+      "correcta": true,
+      "explicacion": "Verdadero: en cada muñequilla se monta la cabeza de una biela.",
+      "fuente": "Tema 2 · Cigüeñal: partes"
+    },
+    {
+      "id": "t2-40",
+      "tipo": "vf",
+      "enunciado": "El volante de inercia va en el extremo delantero y forma parte de la polea del alternador y la bomba de agua.",
+      "correcta": false,
+      "explicacion": "Falso: eso es el amortiguador de vibraciones. El volante va atornillado en un extremo, junto al motor de arranque.",
+      "fuente": "Tema 2 · Cigüeñal: volante y amortiguador"
+    },
+    {
+      "id": "t2-41",
+      "tipo": "test",
+      "enunciado": "¿Qué es el sistema de distribución?",
+      "opciones": [
+        "El conjunto que realiza la renovación de la carga",
+        "El sistema que reparte el combustible a los inyectores",
+        "El circuito que reparte el aceite",
+        "El sistema que transmite el par a las ruedas"
+      ],
+      "correcta": 0,
+      "explicacion": "Abre y cierra válvulas en ángulos concretos del cigüeñal, sincronizado con él, silencioso y con mínimo desgaste.",
+      "fuente": "Tema 2 · Distribución: definición"
+    },
+    {
+      "id": "t2-42",
+      "tipo": "clasificar",
+      "enunciado": "¿OHV, OHC o DOHC?",
+      "cajas": [
+        "OHV",
+        "OHC",
+        "DOHC"
+      ],
+      "tarjetas": [
+        {
+          "texto": "Árbol de levas en el bloque",
+          "caja": 0
+        },
+        {
+          "texto": "Usa varillas",
+          "caja": 0
+        },
+        {
+          "texto": "En desuso",
+          "caja": 0
+        },
+        {
+          "texto": "Un árbol de levas en la culata",
+          "caja": 1
+        },
+        {
+          "texto": "Dos árboles de levas en la culata",
+          "caja": 2
+        },
+        {
+          "texto": "El más usado en multiválvulas",
+          "caja": 2
+        }
+      ],
+      "explicacion": "OHV = válvulas en cabeza, levas en el bloque (varillas). OHC = un árbol en la culata. DOHC = dos árboles en la culata.",
+      "fuente": "Tema 2 · Distribución: tipos"
+    },
+    {
+      "id": "t2-43",
+      "tipo": "test",
+      "enunciado": "¿Por qué la válvula de admisión suele ser más grande que la de escape?",
+      "opciones": [
+        "Para permitir la mayor entrada de aire posible",
+        "Porque soporta hasta 800 ºC",
+        "Porque la mueve una varilla",
+        "Para reducir el cruce de válvulas"
+      ],
+      "correcta": 0,
+      "explicacion": "Cuanto más grande, más aire entra. La que soporta hasta 800 ºC es la de escape.",
+      "fuente": "Tema 2 · Distribución: válvula"
+    },
+    {
+      "id": "t2-44",
+      "tipo": "clasificar",
+      "enunciado": "Accionamiento de la distribución: ¿correa o cadena?",
+      "cajas": [
+        "Correa",
+        "Cadena"
+      ],
+      "tarjetas": [
+        {
+          "texto": "Caucho, nylon o goma con un lado estriado",
+          "caja": 0
+        },
+        {
+          "texto": "No hace ruido y es más barata",
+          "caja": 0
+        },
+        {
+          "texto": "No requiere lubricación",
+          "caja": 0
+        },
+        {
+          "texto": "Hay que cambiarla (vida útil ~150.000 km)",
+          "caja": 0
+        },
+        {
+          "texto": "Eslabones metálicos ensamblados",
+          "caja": 1
+        },
+        {
+          "texto": "Dura la vida del motor (~250.000 km)",
+          "caja": 1
+        },
+        {
+          "texto": "Más ruidosa y más cara",
+          "caja": 1
+        },
+        {
+          "texto": "Necesita tensores y patines",
+          "caja": 1
+        }
+      ],
+      "explicacion": "Correa: silenciosa, barata, sin lubricar, pero se cambia (la más usada). Cadena: sin mantenimiento, más ruidosa y cara (alta gama).",
+      "fuente": "Tema 2 · Distribución: accionamiento por correa o cadena"
+    },
+    {
+      "id": "t2-45",
+      "tipo": "vf",
+      "enunciado": "La transmisión del cigüeñal al árbol de levas puede hacerse por engranajes, por cadena o por correa.",
+      "correcta": true,
+      "explicacion": "Verdadero: son los tres tipos de accionamiento de la distribución.",
+      "fuente": "Tema 2 · Distribución: tipos de accionamiento"
+    },
+    {
+      "id": "t2-46",
+      "tipo": "test",
+      "enunciado": "¿Con qué debe trabajar perfectamente sincronizado el sistema de distribución?",
+      "opciones": [
+        "Con el cigüeñal",
+        "Con el alternador",
+        "Con la bomba de agua",
+        "Con el turbocompresor"
+      ],
+      "correcta": 0,
+      "explicacion": "Las válvulas deben abrir y cerrar en ángulos concretos del cigüeñal, así que van sincronizadas con él.",
+      "fuente": "Tema 2 · Distribución: características"
+    },
+    {
+      "id": "t2-47",
+      "tipo": "ordenar",
+      "enunciado": "Ordena cómo llega el movimiento desde la leva hasta la válvula en un OHV.",
+      "pasos": [
+        "Leva del árbol de levas",
+        "Taqué (empujador)",
+        "Varilla",
+        "Balancín",
+        "Válvula"
+      ],
+      "explicacion": "En OHV el árbol está abajo: leva → taqué → varilla (sube) → balancín (amplifica) → válvula.",
+      "fuente": "Tema 2 · Distribución: partes"
+    },
+    {
+      "id": "t2-48",
+      "tipo": "ordenar",
+      "enunciado": "Ordena el recorrido de la fuerza de los gases hasta el giro.",
+      "pasos": [
+        "Cabeza del pistón",
+        "Bulón",
+        "Biela",
+        "Muñequilla del cigüeñal",
+        "Giro del cigüeñal sobre sus apoyos"
+      ],
+      "explicacion": "Los gases empujan el pistón, el bulón pasa la fuerza a la biela y esta a la muñequilla, que hace girar el cigüeñal.",
+      "fuente": "Tema 2 · Tren alternativo"
+    }
+  ]
+}

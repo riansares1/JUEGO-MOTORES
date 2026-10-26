@@ -83,7 +83,7 @@ function alternarFormatos(items: Item[]): Item[] {
  */
 export function elegirRonda(items: Item[], n: number, p: Progreso): Item[] {
   const ordenados = barajar(items).sort((a, b) => prioridad(a, p) - prioridad(b, p))
-  const maxPorTipo = Math.max(2, Math.ceil(n * 0.4))
+  const maxPorTipo = Math.max(2, Math.ceil(n * 0.5))
   const cuenta: Record<string, number> = {}
   const elegidos: Item[] = []
   for (const it of ordenados) {

@@ -176,8 +176,8 @@ const motor: DefDiagrama = {
           <rect className="hit" x={154} y={196} width={22} height={18} />
           <rect className="hit" x={232} y={196} width={20} height={18} />
           <rect className="hit" x={268} y={196} width={20} height={18} />
-          <path className="pz" fill={C.junta} d="M110,212 L117,212 L117,205 Z M170,212 L163,212 L163,205 Z" />
-          <path className="pz" fill={C.junta} d="M237,212 L244,212 L244,205 Z M283,212 L276,212 L276,205 Z" />
+          <path className="pz" fill="#374151" d="M106,212 L118,212 L118,208 L112,200 L106,200 Z M174,212 L162,212 L162,208 L168,200 L174,200 Z" />
+          <path className="pz" fill="#374151" d="M234,212 L245,212 L245,208 L239,200 L234,200 Z M286,212 L275,212 L275,208 L281,200 L286,200 Z" />
         </>
       ),
     },
