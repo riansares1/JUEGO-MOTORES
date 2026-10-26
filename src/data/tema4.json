@@ -1,1 +1,761 @@
-{"numero":4,"titulo":"(pendiente)","juego":"(pendiente)","descripcion":"","items":[]}
+{
+  "numero": 4,
+  "titulo": "Actuación de motores",
+  "juego": "Banco de pruebas",
+  "descripcion": "Causa y efecto: ¿sube, baja o se queda igual?",
+  "items": [
+    {
+      "id": "t4-01",
+      "tipo": "emparejar",
+      "enunciado": "Une cada parámetro geométrico con su significado.",
+      "pares": [
+        {
+          "izq": "d",
+          "der": "Diámetro del cilindro"
+        },
+        {
+          "izq": "s",
+          "der": "Carrera (s = 2a, con a la manivela)"
+        },
+        {
+          "izq": "VD",
+          "der": "Cilindrada unitaria: sección del pistón × carrera"
+        },
+        {
+          "izq": "VT",
+          "der": "Cilindrada total: nº de cilindros × VD"
+        },
+        {
+          "izq": "z",
+          "der": "Número de cilindros"
+        }
+      ],
+      "explicacion": "La cilindrada unitaria es el volumen que barre un pistón; la total, la de todos los cilindros juntos.",
+      "fuente": "Tema 4 · Parámetros geométricos"
+    },
+    {
+      "id": "t4-02",
+      "tipo": "clasificar",
+      "enunciado": "Según la relación carrera/diámetro (s/d), ¿qué motor es?",
+      "cajas": [
+        "Supercuadrado",
+        "Cuadrado",
+        "Carrera larga"
+      ],
+      "tarjetas": [
+        {
+          "texto": "s/d < 1",
+          "caja": 0
+        },
+        {
+          "texto": "Carrera más corta que el diámetro",
+          "caja": 0
+        },
+        {
+          "texto": "s/d = 1",
+          "caja": 1
+        },
+        {
+          "texto": "Carrera igual al diámetro",
+          "caja": 1
+        },
+        {
+          "texto": "s/d > 1",
+          "caja": 2
+        },
+        {
+          "texto": "Motores grandes (s/d = 1,25–2)",
+          "caja": 2
+        }
+      ],
+      "explicacion": "s/d < 1 supercuadrado, = 1 cuadrado, > 1 carrera larga. Los motores grandes van de 1,25 a 2.",
+      "fuente": "Tema 4 · Parámetros geométricos: relación s/d"
+    },
+    {
+      "id": "t4-03",
+      "tipo": "clasificar",
+      "enunciado": "Motores cuadrados y supercuadrados: ¿ventaja o inconveniente?",
+      "cajas": [
+        "Ventaja",
+        "Inconveniente"
+      ],
+      "tarjetas": [
+        {
+          "texto": "Caben válvulas mayores en la culata",
+          "caja": 0
+        },
+        {
+          "texto": "Bielas más cortas y más rígidas",
+          "caja": 0
+        },
+        {
+          "texto": "Menos rozamiento pistón-cilindro y menos desgaste",
+          "caja": 0
+        },
+        {
+          "texto": "Menor vacío: la mezcla se pulveriza peor",
+          "caja": 1
+        },
+        {
+          "texto": "Menos potencia a bajo régimen",
+          "caja": 1
+        },
+        {
+          "texto": "Pistones mayores y más pesados",
+          "caja": 1
+        },
+        {
+          "texto": "Menor velocidad",
+          "caja": 1
+        }
+      ],
+      "explicacion": "Carrera corta: menos rozamiento, bielas cortas y válvulas grandes; pero pistones pesados y peor a bajo régimen.",
+      "fuente": "Tema 4 · Parámetros geométricos: relación s/d"
+    },
+    {
+      "id": "t4-04",
+      "tipo": "efecto",
+      "enunciado": "Pasamos a un motor supercuadrado (carrera más corta). ¿Rozamiento entre pistón y cilindro?",
+      "correcta": "baja",
+      "explicacion": "Con la carrera más corta el pistón recorre menos: baja el rozamiento, las pérdidas de potencia por él y el desgaste.",
+      "fuente": "Tema 4 · Parámetros geométricos: relación s/d"
+    },
+    {
+      "id": "t4-05",
+      "tipo": "efecto",
+      "enunciado": "Pasamos a un motor supercuadrado (más diámetro). ¿Peso de los pistones?",
+      "correcta": "sube",
+      "explicacion": "Inconveniente del supercuadrado: los pistones han de ser mayores y, por ello, más pesados.",
+      "fuente": "Tema 4 · Parámetros geométricos: relación s/d"
+    },
+    {
+      "id": "t4-06",
+      "tipo": "efecto",
+      "enunciado": "Pasamos a un motor supercuadrado. ¿Potencia a bajo régimen?",
+      "correcta": "baja",
+      "explicacion": "Hay menor grado de vacío, la mezcla se pulveriza peor y se desarrolla menos potencia a bajo régimen.",
+      "fuente": "Tema 4 · Parámetros geométricos: relación s/d"
+    },
+    {
+      "id": "t4-07",
+      "tipo": "vf",
+      "enunciado": "Actualmente se tiende a fabricar motores de carrera larga.",
+      "correcta": false,
+      "explicacion": "Falso: la tendencia actual son los motores supercuadrados y cuadrados.",
+      "fuente": "Tema 4 · Parámetros geométricos: relación s/d"
+    },
+    {
+      "id": "t4-08",
+      "tipo": "emparejar",
+      "enunciado": "Une cada parámetro con su definición.",
+      "pares": [
+        {
+          "izq": "Relación de compresión",
+          "der": "Volumen máximo / volumen mínimo del cilindro"
+        },
+        {
+          "izq": "Velocidad lineal media del pistón",
+          "der": "Velocidad media del pistón según carrera y régimen (m/s)"
+        },
+        {
+          "izq": "Tiempo de ciclo",
+          "der": "Tiempo necesario para completar un ciclo"
+        },
+        {
+          "izq": "Grado de carga",
+          "der": "Par efectivo / par efectivo máximo a un régimen dado"
+        }
+      ],
+      "explicacion": "r mide cuánto se comprime; cm, lo rápido que va el pistón; el tiempo de ciclo depende de 2T/4T y del régimen; Gc, cuánto se pide al motor.",
+      "fuente": "Tema 4 · Parámetros geométricos"
+    },
+    {
+      "id": "t4-09",
+      "tipo": "efecto",
+      "enunciado": "A igual régimen de giro, pasamos de un 2T a un 4T. ¿Tiempo de ciclo?",
+      "correcta": "sube",
+      "explicacion": "El 4T necesita 2 vueltas de cigüeñal por ciclo y el 2T solo 1, así que su ciclo tarda el doble.",
+      "fuente": "Tema 4 · Parámetros geométricos: tiempo de ciclo"
+    },
+    {
+      "id": "t4-10",
+      "tipo": "efecto",
+      "enunciado": "Aumentamos el régimen de giro n sin cambiar la carrera. ¿Velocidad lineal media del pistón?",
+      "correcta": "sube",
+      "explicacion": "cm depende de la carrera y del régimen: si el motor gira más rápido, el pistón sube y baja más deprisa.",
+      "fuente": "Tema 4 · Parámetros geométricos: velocidad lineal media"
+    },
+    {
+      "id": "t4-11",
+      "tipo": "efecto",
+      "enunciado": "Pasamos de atmosférico a sobrealimentado sin tocar cilindros ni carrera. ¿Cilindrada?",
+      "correcta": "igual",
+      "explicacion": "La cilindrada solo depende de la geometría (sección × carrera × nº de cilindros). El turbo cambia el aire que entra, no el tamaño.",
+      "fuente": "Tema 4 · Parámetros geométricos: cilindrada"
+    },
+    {
+      "id": "t4-12",
+      "tipo": "emparejar",
+      "enunciado": "Une cada término del ciclo real con su definición.",
+      "pares": [
+        {
+          "izq": "Lazo de trabajo",
+          "der": "Compresión, combustión y expansión (trabajo bruto)"
+        },
+        {
+          "izq": "Lazo de bombeo",
+          "der": "Procesos de admisión y escape"
+        },
+        {
+          "izq": "Trabajo indicado neto",
+          "der": "Lazo de trabajo menos lazo de bombeo"
+        },
+        {
+          "izq": "Presión media indicada",
+          "der": "Trabajo indicado / cilindrada"
+        }
+      ],
+      "explicacion": "El lazo grande da trabajo; el pequeño (bombeo) lo consume. El neto es la diferencia.",
+      "fuente": "Tema 4 · Parámetros indicados"
+    },
+    {
+      "id": "t4-13",
+      "tipo": "diagrama",
+      "diagrama": "lazos",
+      "modo": "toca",
+      "objetivo": "lazo_bombeo",
+      "enunciado": "Ciclo real: toca el lazo de bombeo.",
+      "explicacion": "Es el lazo pequeño, cerca de la presión atmosférica: admisión y escape. Es trabajo negativo.",
+      "fuente": "Tema 4 · Parámetros indicados: trabajo indicado real"
+    },
+    {
+      "id": "t4-14",
+      "tipo": "diagrama",
+      "diagrama": "lazos",
+      "modo": "pregunta",
+      "opcionesTexto": [
+        "Lazo de trabajo: compresión, combustión y expansión",
+        "Lazo de bombeo: admisión y escape",
+        "Pérdidas mecánicas por fricción"
+      ],
+      "correcta": 0,
+      "enunciado": "¿Qué representa el lazo grande de este diagrama p-V real?",
+      "explicacion": "El lazo grande es el de trabajo (trabajo indicado bruto). Al restarle el de bombeo sale el trabajo indicado neto.",
+      "fuente": "Tema 4 · Parámetros indicados: trabajo indicado real"
+    },
+    {
+      "id": "t4-15",
+      "tipo": "test",
+      "enunciado": "¿Qué significa físicamente la presión media indicada (PMI)?",
+      "opciones": [
+        "La presión constante que, en la carrera de trabajo, daría el trabajo indicado del ciclo",
+        "La presión máxima que se alcanza en la combustión",
+        "La presión en el colector de admisión",
+        "La media entre la presión de admisión y la de escape"
+      ],
+      "correcta": 0,
+      "explicacion": "Es una presión «equivalente»: si empujara constante sobre el pistón en la carrera de trabajo, daría el mismo trabajo indicado.",
+      "fuente": "Tema 4 · Parámetros indicados: presión media indicada"
+    },
+    {
+      "id": "t4-16",
+      "tipo": "vf",
+      "enunciado": "A igualdad de cilindrada, un motor con más presión media indicada desarrolla más trabajo.",
+      "correcta": true,
+      "explicacion": "Verdadero: el trabajo indicado es PMI por cilindrada; con la misma cilindrada, más PMI = más trabajo.",
+      "fuente": "Tema 4 · Parámetros indicados: presión media indicada"
+    },
+    {
+      "id": "t4-17",
+      "tipo": "clasificar",
+      "enunciado": "¿Parámetro indicado o efectivo?",
+      "cajas": [
+        "Indicado",
+        "Efectivo"
+      ],
+      "tarjetas": [
+        {
+          "texto": "Referido al ciclo (al bloque motor)",
+          "caja": 0
+        },
+        {
+          "texto": "Lazo de trabajo y lazo de bombeo",
+          "caja": 0
+        },
+        {
+          "texto": "Presión media indicada",
+          "caja": 0
+        },
+        {
+          "texto": "Trabajo realizado por el ciclo / tiempo de ciclo",
+          "caja": 0
+        },
+        {
+          "texto": "Par motor",
+          "caja": 1
+        },
+        {
+          "texto": "Consumo específico",
+          "caja": 1
+        },
+        {
+          "texto": "Presión media efectiva",
+          "caja": 1
+        },
+        {
+          "texto": "Su óptimo está en el polo económico",
+          "caja": 1
+        }
+      ],
+      "explicacion": "Indicados: lo que da el ciclo. Efectivos: lo que sale realmente por el cigüeñal (par, PME, consumo específico, polo económico).",
+      "fuente": "Tema 4 · Parámetros indicados y efectivos"
+    },
+    {
+      "id": "t4-18",
+      "tipo": "test",
+      "enunciado": "¿Dónde se alcanzan los valores óptimos del rendimiento efectivo?",
+      "opciones": [
+        "En el polo económico de funcionamiento",
+        "En el punto de potencia máxima",
+        "Al régimen máximo de giro",
+        "En el lazo de bombeo"
+      ],
+      "correcta": 0,
+      "explicacion": "El polo económico es el punto de funcionamiento donde el rendimiento efectivo es óptimo.",
+      "fuente": "Tema 4 · Parámetros efectivos: rendimiento efectivo"
+    },
+    {
+      "id": "t4-19",
+      "tipo": "test",
+      "enunciado": "¿Qué es el par motor?",
+      "opciones": [
+        "El momento de fuerza que hay que realizar para que gire el cigüeñal (N·m)",
+        "El trabajo por unidad de cilindrada",
+        "El consumo de combustible por potencia",
+        "La potencia por unidad de peso"
+      ],
+      "correcta": 0,
+      "explicacion": "Par = fuerza × distancia (M = F·d), en N·m. Junto con el régimen de giro da la potencia.",
+      "fuente": "Tema 4 · Parámetros efectivos: par motor"
+    },
+    {
+      "id": "t4-20",
+      "tipo": "test",
+      "enunciado": "¿Qué mide el consumo específico efectivo?",
+      "opciones": [
+        "El combustible consumido por potencia generada (g/kWh)",
+        "El aire que entra comparado con el que podría entrar",
+        "Los litros gastados cada 100 km",
+        "El calor aportado en cada ciclo"
+      ],
+      "correcta": 0,
+      "explicacion": "Ce = combustible / potencia, en g/kWh: cuanto MENOR, mejor aprovecha el combustible.",
+      "fuente": "Tema 4 · Parámetros efectivos: consumo específico"
+    },
+    {
+      "id": "t4-21",
+      "tipo": "test",
+      "enunciado": "¿Cuál NO es una causa de pérdidas mecánicas?",
+      "opciones": [
+        "Las pérdidas de calor por las paredes del cilindro",
+        "La fricción de las partes móviles",
+        "Las pérdidas por bombeo (renovación de carga)",
+        "El accionamiento de auxiliares (alternador, A/A, distribución…)"
+      ],
+      "correcta": 0,
+      "explicacion": "El rendimiento mecánico recoge fricción, bombeo y auxiliares. Las pérdidas de calor son del ciclo, no mecánicas.",
+      "fuente": "Tema 4 · Parámetros efectivos: rendimiento mecánico"
+    },
+    {
+      "id": "t4-22",
+      "tipo": "vf",
+      "enunciado": "La presión media de pérdidas mecánicas es la diferencia entre la presión media indicada y la efectiva.",
+      "correcta": true,
+      "explicacion": "Verdadero: PMPM = PMI − PME. Lo que da el ciclo menos lo que llega al cigüeñal = lo que se pierde por el camino.",
+      "fuente": "Tema 4 · Parámetros efectivos: presión media de pérdidas"
+    },
+    {
+      "id": "t4-23",
+      "tipo": "efecto",
+      "enunciado": "Con la misma PMI, aumentan las pérdidas mecánicas (más fricción). ¿Presión media efectiva?",
+      "correcta": "baja",
+      "explicacion": "PME = PMI − PMPM: si las pérdidas suben y la PMI no cambia, llega menos al cigüeñal.",
+      "fuente": "Tema 4 · Parámetros efectivos: presión media de pérdidas"
+    },
+    {
+      "id": "t4-24",
+      "tipo": "test",
+      "enunciado": "¿De qué depende el rendimiento mecánico?",
+      "opciones": [
+        "Del grado de carga y del régimen de giro",
+        "Solo de la relación de compresión",
+        "Solo de γ",
+        "Del tipo de refrigeración"
+      ],
+      "correcta": 0,
+      "explicacion": "Rendimiento mecánico = efectivo / indicado, y depende del grado de carga y del régimen de giro.",
+      "fuente": "Tema 4 · Parámetros efectivos: rendimiento mecánico"
+    },
+    {
+      "id": "t4-25",
+      "tipo": "efecto",
+      "enunciado": "Según la curva de los apuntes, pasamos de 2000 a 6000 rpm. ¿Rendimiento mecánico?",
+      "correcta": "baja",
+      "explicacion": "La curva tiene su máximo (≈90 %) hacia 2000 rpm y cae a altos regímenes, donde crecen las pérdidas.",
+      "fuente": "Tema 4 · Parámetros efectivos: rendimiento mecánico (curva)"
+    },
+    {
+      "id": "t4-26",
+      "tipo": "test",
+      "enunciado": "¿Qué mide el rendimiento volumétrico?",
+      "opciones": [
+        "El aire que entra en el motor comparado con el que podría entrar por cilindrada",
+        "El trabajo efectivo comparado con el indicado",
+        "El combustible gastado por potencia",
+        "La relación entre volumen máximo y mínimo"
+      ],
+      "correcta": 0,
+      "explicacion": "Indica lo bien que se llena el cilindro. El efectivo/indicado es el rendimiento mecánico.",
+      "fuente": "Tema 4 · Rendimiento volumétrico"
+    },
+    {
+      "id": "t4-27",
+      "tipo": "test",
+      "enunciado": "En un motor sobrealimentado, ¿cómo son el rendimiento volumétrico general y el de entrada?",
+      "opciones": [
+        "Distintos, porque las condiciones de admisión cambian respecto a las atmosféricas",
+        "Siempre iguales",
+        "Iguales, porque el turbo no cambia el aire",
+        "El de entrada no existe en motores sobrealimentados"
+      ],
+      "correcta": 0,
+      "explicacion": "El general usa condiciones ambiente (p0, T0) y el de entrada, las de admisión (padm, Tadm). Con turbo no coinciden.",
+      "fuente": "Tema 4 · Rendimiento volumétrico"
+    },
+    {
+      "id": "t4-28",
+      "tipo": "vf",
+      "enunciado": "En un motor de aspiración natural, el rendimiento volumétrico general y el de entrada son iguales.",
+      "correcta": true,
+      "explicacion": "Verdadero: las condiciones de admisión son las atmosféricas, así que ηv,g = ηv,e.",
+      "fuente": "Tema 4 · Rendimiento volumétrico"
+    },
+    {
+      "id": "t4-29",
+      "tipo": "clasificar",
+      "enunciado": "¿Qué rendimiento volumétrico es?",
+      "cajas": [
+        "General (ηv,g)",
+        "A la entrada (ηv,e)"
+      ],
+      "tarjetas": [
+        {
+          "texto": "Usa las condiciones ambiente",
+          "caja": 0
+        },
+        {
+          "texto": "Presión p0 y temperatura T0",
+          "caja": 0
+        },
+        {
+          "texto": "Referido a la atmósfera",
+          "caja": 0
+        },
+        {
+          "texto": "Usa las condiciones de admisión al cilindro",
+          "caja": 1
+        },
+        {
+          "texto": "Presión padm y temperatura Tadm",
+          "caja": 1
+        },
+        {
+          "texto": "Considera la mezcla (o aire) al entrar al cilindro",
+          "caja": 1
+        }
+      ],
+      "explicacion": "General: condiciones ambiente. A la entrada: condiciones con las que el aire entra al cilindro (en un turbo, ya comprimido).",
+      "fuente": "Tema 4 · Rendimiento volumétrico"
+    },
+    {
+      "id": "t4-30",
+      "tipo": "emparejar",
+      "enunciado": "Une cada término con su definición.",
+      "pares": [
+        {
+          "izq": "Dosado (F)",
+          "der": "Masa de combustible / masa de aire"
+        },
+        {
+          "izq": "Dosado estequiométrico en MEP",
+          "der": "≈ 1/14,7"
+        },
+        {
+          "izq": "Factor lambda (λ)",
+          "der": "1/F"
+        },
+        {
+          "izq": "Dosado relativo (FR)",
+          "der": "Dosado / dosado estequiométrico"
+        }
+      ],
+      "explicacion": "El dosado relativo compara la mezcla real con la estequiométrica: así se sabe si es rica o pobre.",
+      "fuente": "Tema 4 · Otros parámetros: dosado"
+    },
+    {
+      "id": "t4-31",
+      "tipo": "clasificar",
+      "enunciado": "¿Mezcla rica, estequiométrica o pobre?",
+      "cajas": [
+        "Rica",
+        "Estequiométrica",
+        "Pobre"
+      ],
+      "tarjetas": [
+        {
+          "texto": "FR > 1",
+          "caja": 0
+        },
+        {
+          "texto": "Más combustible que el estequiométrico",
+          "caja": 0
+        },
+        {
+          "texto": "FR = 1",
+          "caja": 1
+        },
+        {
+          "texto": "MEP de mezcla homogénea",
+          "caja": 1
+        },
+        {
+          "texto": "FR < 1",
+          "caja": 2
+        },
+        {
+          "texto": "MEC (FR < 0,95)",
+          "caja": 2
+        },
+        {
+          "texto": "MEP de mezcla estratificada (FR < 0,9)",
+          "caja": 2
+        }
+      ],
+      "explicacion": "FR > 1 rica, = 1 estequiométrica, < 1 pobre. El MEC y el MEP estratificado trabajan con mezclas pobres.",
+      "fuente": "Tema 4 · Otros parámetros: dosado relativo · Comparación MEP-MEC"
+    },
+    {
+      "id": "t4-32",
+      "tipo": "vf",
+      "enunciado": "Una mezcla con dosado relativo menor que 1 es una mezcla rica.",
+      "correcta": false,
+      "explicacion": "Falso: FR < 1 es mezcla POBRE (menos combustible del estequiométrico). Rica es FR > 1.",
+      "fuente": "Tema 4 · Otros parámetros: dosado relativo"
+    },
+    {
+      "id": "t4-33",
+      "tipo": "clasificar",
+      "enunciado": "Según la tabla de los apuntes, ¿en qué motor es mayor este valor?",
+      "cajas": [
+        "Mayor en MEP",
+        "Mayor en MEC"
+      ],
+      "tarjetas": [
+        {
+          "texto": "Relación de compresión",
+          "caja": 1
+        },
+        {
+          "texto": "Régimen de giro máximo",
+          "caja": 0
+        },
+        {
+          "texto": "Velocidad media máxima del pistón",
+          "caja": 0
+        },
+        {
+          "texto": "Rendimiento efectivo (gasolina vs diésel DI turbo)",
+          "caja": 1
+        },
+        {
+          "texto": "Consumo específico (gasolina vs diésel DI turbo)",
+          "caja": 0
+        },
+        {
+          "texto": "PME de turismos turbo",
+          "caja": 1
+        },
+        {
+          "texto": "Dosado relativo (MEP de mezcla homogénea)",
+          "caja": 0
+        }
+      ],
+      "explicacion": "MEC: más r, más rendimiento y más PME. MEP: gira más rápido, pistón más veloz, más consumo específico y mezcla más rica.",
+      "fuente": "Tema 4 · Comparación de parámetros MEP y MEC"
+    },
+    {
+      "id": "t4-34",
+      "tipo": "test",
+      "enunciado": "Según la tabla de los apuntes, ¿qué relación de compresión tiene un MEP de 4T?",
+      "opciones": [
+        "8–12",
+        "16–24",
+        "18–21",
+        "30–40"
+      ],
+      "correcta": 0,
+      "explicacion": "MEP 4T: 8–12 (2T: 7,5–11). MEC: 16–24 en IDI y 18–21 en DI.",
+      "fuente": "Tema 4 · Comparación de parámetros MEP y MEC"
+    },
+    {
+      "id": "t4-35",
+      "tipo": "test",
+      "enunciado": "Según la tabla, ¿qué motor tiene el mayor rendimiento efectivo (55 %) y el menor consumo específico?",
+      "opciones": [
+        "Diésel marítimo de 2T lento",
+        "Gasolina deportivo",
+        "Diésel de turismo IDI",
+        "Gasolina de turismo atmosférico"
+      ],
+      "correcta": 0,
+      "explicacion": "Los grandes diésel marinos de 2T lentos llegan al 55 % de rendimiento con unos 150 g/kWh.",
+      "fuente": "Tema 4 · Comparación de parámetros MEP y MEC"
+    },
+    {
+      "id": "t4-36",
+      "tipo": "efecto",
+      "enunciado": "Turismo de gasolina: pasamos de atmosférico a turbo. ¿Presión media efectiva?",
+      "correcta": "sube",
+      "explicacion": "Según la tabla, la PME pasa de unos 13 bar (atmosférico) a 17 bar (turbo): más aire, más trabajo por ciclo.",
+      "fuente": "Tema 4 · Comparación de parámetros MEP y MEC"
+    },
+    {
+      "id": "t4-37",
+      "tipo": "efecto",
+      "enunciado": "Pasamos de aspiración natural a sobrealimentado. ¿Densidad del aire de admisión?",
+      "correcta": "sube",
+      "explicacion": "Es justo el objetivo de la sobrealimentación: más presión (turbo) y menos temperatura (intercooler) = aire más denso.",
+      "fuente": "Tema 1 · Presión de admisión: sobrealimentación"
+    },
+    {
+      "id": "t4-38",
+      "tipo": "efecto",
+      "enunciado": "Turismo diésel: pasamos de inyección indirecta (IDI) a directa con turbo. ¿Consumo específico?",
+      "correcta": "baja",
+      "explicacion": "Según la tabla baja de 240 a 190 g/kWh: el DI turbo aprovecha mejor el combustible.",
+      "fuente": "Tema 4 · Comparación de parámetros MEP y MEC"
+    },
+    {
+      "id": "t4-39",
+      "tipo": "efecto",
+      "enunciado": "Turismo diésel: pasamos de IDI a DI turbo. ¿Rendimiento efectivo?",
+      "correcta": "sube",
+      "explicacion": "Según la tabla sube del 35 % al 44 %. Va de la mano de la bajada del consumo específico.",
+      "fuente": "Tema 4 · Comparación de parámetros MEP y MEC"
+    },
+    {
+      "id": "t4-40",
+      "tipo": "efecto",
+      "enunciado": "Pisamos el acelerador al 100 %. ¿Pérdidas por bombeo?",
+      "correcta": "baja",
+      "explicacion": "En el mapa motor, con el acelerador al 100 % las pérdidas por bombeo son mínimas.",
+      "fuente": "Tema 4 · Mapa motor"
+    },
+    {
+      "id": "t4-41",
+      "tipo": "test",
+      "enunciado": "¿Qué es el mapa motor?",
+      "opciones": [
+        "El conjunto de puntos posibles de funcionamiento del motor",
+        "La curva de potencia a plena carga",
+        "El esquema del sistema de distribución",
+        "El diagrama p-V del ciclo real"
+      ],
+      "correcta": 0,
+      "explicacion": "En cada punto (régimen y par) interesa conocer potencia, consumo, par, emisiones, ruido…",
+      "fuente": "Tema 4 · Mapa motor"
+    },
+    {
+      "id": "t4-42",
+      "tipo": "test",
+      "enunciado": "¿Qué dan las curvas características de un motor?",
+      "opciones": [
+        "Potencia, par y consumo específico frente al régimen, a plena carga",
+        "Presión frente a volumen en el cilindro",
+        "Potencia, par y consumo específico a media carga",
+        "La temperatura frente a la entropía"
+      ],
+      "correcta": 0,
+      "explicacion": "Son las tres curvas en función del régimen de giro funcionando a PLENA carga.",
+      "fuente": "Tema 4 · Curvas características"
+    },
+    {
+      "id": "t4-43",
+      "tipo": "diagrama",
+      "diagrama": "curvas",
+      "modo": "toca",
+      "objetivo": "par_max",
+      "enunciado": "Curvas características: toca el punto de par máximo.",
+      "explicacion": "El par es la curva en forma de joroba; su máximo llega a un régimen menor que el de potencia máxima.",
+      "fuente": "Tema 4 · Curvas características"
+    },
+    {
+      "id": "t4-44",
+      "tipo": "diagrama",
+      "diagrama": "curvas",
+      "modo": "toca",
+      "objetivo": "pot_max",
+      "enunciado": "Curvas características: toca el punto de potencia máxima.",
+      "explicacion": "La potencia crece con el régimen y alcanza su máximo cerca del régimen más alto.",
+      "fuente": "Tema 4 · Curvas características"
+    },
+    {
+      "id": "t4-45",
+      "tipo": "diagrama",
+      "diagrama": "curvas",
+      "modo": "toca",
+      "objetivo": "ce_min",
+      "enunciado": "Curvas características: toca el punto de consumo específico mínimo.",
+      "explicacion": "El consumo específico es la curva en forma de U (abajo); su mínimo es el punto de mejor aprovechamiento.",
+      "fuente": "Tema 4 · Curvas características"
+    },
+    {
+      "id": "t4-46",
+      "tipo": "diagrama",
+      "diagrama": "curvas",
+      "modo": "identifica",
+      "objetivo": "curva_par",
+      "opciones": [
+        "curva_par",
+        "curva_pot",
+        "curva_ce"
+      ],
+      "enunciado": "¿Qué curva está resaltada?",
+      "explicacion": "Curva de par: sube, se mantiene alta en la zona media de regímenes y baja al final.",
+      "fuente": "Tema 4 · Curvas características"
+    },
+    {
+      "id": "t4-47",
+      "tipo": "diagrama",
+      "diagrama": "curvas",
+      "modo": "identifica",
+      "objetivo": "curva_ce",
+      "opciones": [
+        "curva_ce",
+        "curva_par",
+        "curva_pot"
+      ],
+      "enunciado": "¿Qué curva está resaltada?",
+      "explicacion": "Consumo específico: forma de U, con un mínimo en la zona media de regímenes.",
+      "fuente": "Tema 4 · Curvas características"
+    },
+    {
+      "id": "t4-48",
+      "tipo": "vf",
+      "enunciado": "En las curvas características, el par máximo se alcanza a un régimen menor que la potencia máxima.",
+      "correcta": true,
+      "explicacion": "Verdadero. En el ejemplo de los apuntes (V8): par máximo a 5800 rpm y potencia máxima a 7500 rpm.",
+      "fuente": "Tema 4 · Curvas características"
+    }
+  ]
+}
