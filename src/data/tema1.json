@@ -1,0 +1,569 @@
+{
+  "numero": 1,
+  "titulo": "Clasificación de MCIA",
+  "juego": "Clasificador",
+  "descripcion": "Coloca cada característica en su casilla",
+  "items": [
+    {
+      "id": "t1-01",
+      "tipo": "test",
+      "enunciado": "Según los apuntes, ¿qué es un motor?",
+      "opciones": [
+        "Aparato que transforma en trabajo mecánico cualquier otra forma de energía",
+        "Aparato que transforma energía térmica en energía química",
+        "Máquina que transforma energía mecánica en eléctrica",
+        "Aparato que genera calor a partir de un combustible"
+      ],
+      "correcta": 0,
+      "explicacion": "Motor = cualquier energía → trabajo mecánico. Que sea «de combustión» concreta que esa energía es térmica.",
+      "fuente": "Tema 1 · Introducción: conceptos previos"
+    },
+    {
+      "id": "t1-02",
+      "tipo": "emparejar",
+      "enunciado": "Une cada palabra de «MCIA» con su significado.",
+      "pares": [
+        { "izq": "Motor", "der": "Transforma cualquier energía en trabajo mecánico" },
+        { "izq": "Combustión", "der": "Usa energía térmica y la convierte en mecánica" },
+        { "izq": "Interna", "der": "El estado térmico se genera en el propio fluido motor" },
+        { "izq": "Alternativo", "der": "El trabajo se transmite por el desplazamiento lineal de un émbolo" }
+      ],
+      "explicacion": "Motor (→ trabajo) + de combustión (energía térmica) + interna (en el propio fluido) + alternativa (émbolo que va y viene).",
+      "fuente": "Tema 1 · Introducción: conceptos previos"
+    },
+    {
+      "id": "t1-03",
+      "tipo": "vf",
+      "enunciado": "Un motor es de combustión «interna» cuando el calor se genera fuera del fluido motor y luego se le transmite.",
+      "correcta": false,
+      "explicacion": "Falso: es interna cuando el estado térmico se genera en el propio fluido motor.",
+      "fuente": "Tema 1 · Introducción: conceptos previos"
+    },
+    {
+      "id": "t1-04",
+      "tipo": "vf",
+      "enunciado": "Un motor es «alternativo» cuando el trabajo se transmite mediante el desplazamiento lineal de un émbolo.",
+      "correcta": true,
+      "explicacion": "Verdadero: el émbolo (pistón) sube y baja en línea recta; ese movimiento transmite el trabajo.",
+      "fuente": "Tema 1 · Introducción: conceptos previos"
+    },
+    {
+      "id": "t1-05",
+      "tipo": "clasificar",
+      "enunciado": "¿Ventaja o inconveniente de los MCIA?",
+      "cajas": ["Ventaja", "Inconveniente"],
+      "tarjetas": [
+        { "texto": "Combustibles líquidos de elevado poder calorífico", "caja": 0 },
+        { "texto": "Amplio campo de potencias (0,1 kW a más de 32 MW)", "caja": 0 },
+        { "texto": "Modularidad: mismo diseño, distintas potencias", "caja": 0 },
+        { "texto": "Disposiciones constructivas muy variadas", "caja": 0 },
+        { "texto": "Contaminación: CO2, NOx, SO2, CO, HC, partículas", "caja": 1 },
+        { "texto": "Precio del petróleo y su posible carencia futura", "caja": 1 },
+        { "texto": "Buen rendimiento térmico", "caja": 0 }
+      ],
+      "explicacion": "Ventajas: combustible, rendimiento, potencias, modularidad y diseño. Inconvenientes: contaminación y problemas del combustible.",
+      "fuente": "Tema 1 · Ventajas e inconvenientes"
+    },
+    {
+      "id": "t1-06",
+      "tipo": "test",
+      "enunciado": "¿Por qué es tan importante en automoción usar combustibles líquidos de elevado poder calorífico?",
+      "opciones": [
+        "Porque condiciona la autonomía del vehículo",
+        "Porque reduce las emisiones de NOx",
+        "Porque permite usar lumbreras en lugar de válvulas",
+        "Porque elimina la necesidad de refrigeración"
+      ],
+      "correcta": 0,
+      "explicacion": "Más energía por litro de combustible = más kilómetros con el mismo depósito: condiciona la autonomía.",
+      "fuente": "Tema 1 · Ventajas e inconvenientes"
+    },
+    {
+      "id": "t1-07",
+      "tipo": "test",
+      "enunciado": "¿Cuál NO es una consecuencia del problema del petróleo citada en los apuntes?",
+      "opciones": [
+        "Volver a la carburación en lugar de la inyección",
+        "Optimizar la combustión mejorando el rendimiento",
+        "Buscar nuevos combustibles: biocombustibles, H2, GNC, GNL",
+        "Aparición de motores eléctricos e híbridos"
+      ],
+      "correcta": 0,
+      "explicacion": "El precio y la posible carencia del petróleo obligan a optimizar la combustión, buscar combustibles nuevos y a nuevas tecnologías (eléctricos, híbridos).",
+      "fuente": "Tema 1 · Ventajas e inconvenientes"
+    },
+    {
+      "id": "t1-08",
+      "tipo": "vf",
+      "enunciado": "El rendimiento térmico de un MCIA es constante: no depende del régimen de carga ni del de giro.",
+      "correcta": false,
+      "explicacion": "Falso: es bueno, pero sus valores varían con el régimen de carga y con el régimen de giro.",
+      "fuente": "Tema 1 · Ventajas e inconvenientes"
+    },
+    {
+      "id": "t1-09",
+      "tipo": "vf",
+      "enunciado": "Entre las aplicaciones de los MCIA están los grupos generadores de electricidad de bajas potencias y la cogeneración.",
+      "correcta": true,
+      "explicacion": "Verdadero. También: transporte, obras públicas, maquinaria agrícola, ferrocarril, barcos y accionamiento industrial y rural.",
+      "fuente": "Tema 1 · Aplicaciones"
+    },
+    {
+      "id": "t1-10",
+      "tipo": "clasificar",
+      "enunciado": "¿MEP (gasolina) o MEC (diésel)?",
+      "cajas": ["MEP", "MEC"],
+      "tarjetas": [
+        { "texto": "Encendido por la chispa de una bujía", "caja": 0 },
+        { "texto": "Autoinflamación del combustible al inyectarlo", "caja": 1 },
+        { "texto": "Motor Otto", "caja": 0 },
+        { "texto": "El aire sufre una fuerte compresión", "caja": 1 },
+        { "texto": "Gasolina", "caja": 0 },
+        { "texto": "GN, GLP, bioetanol", "caja": 0 },
+        { "texto": "Diésel y biodiésel", "caja": 1 },
+        { "texto": "Encendido por compresión", "caja": 1 }
+      ],
+      "explicacion": "MEP: un agente externo (chispa) inflama la mezcla. MEC: el aire muy comprimido hace que el combustible se autoinflame al inyectarlo.",
+      "fuente": "Tema 1 · Clasificación por proceso de combustión"
+    },
+    {
+      "id": "t1-11",
+      "tipo": "test",
+      "enunciado": "En un MEP, ¿qué origina la combustión?",
+      "opciones": [
+        "Un agente externo, normalmente la chispa de una bujía",
+        "La autoinflamación por la fuerte compresión del aire",
+        "El calor de los gases de escape",
+        "La inyección de combustible en el cárter"
+      ],
+      "correcta": 0,
+      "explicacion": "MEP = Motor de Encendido Provocado: lo provoca un agente externo (la chispa de la bujía) que inflama la mezcla aire-combustible.",
+      "fuente": "Tema 1 · Clasificación por proceso de combustión"
+    },
+    {
+      "id": "t1-12",
+      "tipo": "vf",
+      "enunciado": "En un MEC el combustible se autoinflama porque el aire se ha comprimido fuertemente antes de la inyección.",
+      "correcta": true,
+      "explicacion": "Verdadero: la fuerte compresión garantiza la autoinflamación en el momento de la inyección. No necesita bujía.",
+      "fuente": "Tema 1 · Clasificación por proceso de combustión"
+    },
+    {
+      "id": "t1-13",
+      "tipo": "test",
+      "enunciado": "¿Qué combustible corresponde a un MEC?",
+      "opciones": ["Biodiésel", "GLP", "Bioetanol", "Gas natural (GN)"],
+      "correcta": 0,
+      "explicacion": "MEC usa diésel y biodiésel. GLP, GN y bioetanol (como la gasolina) son combustibles de MEP.",
+      "fuente": "Tema 1 · Clasificación por proceso de combustión"
+    },
+    {
+      "id": "t1-14",
+      "tipo": "emparejar",
+      "enunciado": "Une cada concepto con su definición.",
+      "pares": [
+        { "izq": "PMS", "der": "Posición del émbolo con el mínimo volumen en el cilindro" },
+        { "izq": "PMI", "der": "Posición del émbolo con el máximo volumen en el cilindro" },
+        { "izq": "Carrera (s)", "der": "Distancia entre PMS y PMI" },
+        { "izq": "Cilindrada unitaria", "der": "Volumen desplazado por el émbolo entre PMS y PMI" }
+      ],
+      "explicacion": "PMS = arriba (volumen mínimo, cámara de combustión); PMI = abajo (volumen máximo). Carrera = distancia; cilindrada = volumen barrido.",
+      "fuente": "Tema 1 · Renovación de la carga: conceptos previos"
+    },
+    {
+      "id": "t1-15",
+      "tipo": "test",
+      "enunciado": "¿Cuántas vueltas de cigüeñal necesita un ciclo completo de un motor de 4 tiempos?",
+      "opciones": ["2 vueltas", "1 vuelta", "4 vueltas", "Media vuelta"],
+      "correcta": 0,
+      "explicacion": "4T: 4 movimientos del pistón = 2 revoluciones de cigüeñal. 2T: 2 movimientos = 1 revolución.",
+      "fuente": "Tema 1 · Clasificación por renovación de la carga"
+    },
+    {
+      "id": "t1-16",
+      "tipo": "ordenar",
+      "enunciado": "Ordena los 4 tiempos del motor 4T.",
+      "pasos": [
+        "Admisión: el pistón baja y aspira la mezcla",
+        "Compresión: el pistón sube y comprime la mezcla",
+        "Combustión-expansión: la mezcla arde y empuja el pistón hacia abajo",
+        "Escape: el pistón sube y expulsa los gases por la válvula de escape"
+      ],
+      "explicacion": "Admisión (baja) → compresión (sube) → combustión-expansión (baja) → escape (sube). Solo el 3.º tiempo da trabajo.",
+      "fuente": "Tema 1 · Motores de 4 tiempos"
+    },
+    {
+      "id": "t1-17",
+      "tipo": "vf",
+      "enunciado": "El volumen que queda en el cilindro con el pistón en el PMS es el volumen de la cámara de combustión.",
+      "correcta": true,
+      "explicacion": "Verdadero: el PMS es la posición de mínimo volumen, que corresponde a la cámara de combustión.",
+      "fuente": "Tema 1 · Renovación de la carga: conceptos previos"
+    },
+    {
+      "id": "t1-18",
+      "tipo": "test",
+      "enunciado": "En el tercer tiempo de un motor diésel, ¿qué hace que la mezcla se inflame?",
+      "opciones": ["La propia compresión", "La chispa de la bujía", "La lumbrera de transferencia", "El turbocompresor"],
+      "correcta": 0,
+      "explicacion": "En el tercer tiempo la mezcla explota por la chispa de la bujía (gasolina) o por la propia compresión (diésel).",
+      "fuente": "Tema 1 · Motores de 4 tiempos"
+    },
+    {
+      "id": "t1-19",
+      "tipo": "clasificar",
+      "enunciado": "¿Motor de 2 tiempos o de 4 tiempos?",
+      "cajas": ["2T", "4T"],
+      "tarjetas": [
+        { "texto": "Lumbreras en el propio cilindro", "caja": 0 },
+        { "texto": "Válvulas de admisión y escape", "caja": 1 },
+        { "texto": "El cárter es depósito de preadmisión", "caja": 0 },
+        { "texto": "Proceso de barrido", "caja": 0 },
+        { "texto": "Un ciclo cada 2 vueltas de cigüeñal", "caja": 1 },
+        { "texto": "Un ciclo cada vuelta de cigüeñal", "caja": 0 },
+        { "texto": "Mejor rendimiento", "caja": 1 },
+        { "texto": "Mayor potencia específica", "caja": 0 }
+      ],
+      "explicacion": "2T: lumbreras, cárter de preadmisión, barrido, 1 vuelta y más potencia específica. 4T: válvulas, 2 vueltas y mejor rendimiento.",
+      "fuente": "Tema 1 · Motores de 2 tiempos · 4T vs 2T"
+    },
+    {
+      "id": "t1-20",
+      "tipo": "ordenar",
+      "enunciado": "Ordena lo que ocurre en el cilindro de un 2T, empezando por la compresión.",
+      "pasos": ["Compresión", "Combustión-expansión", "Escape", "Barrido"],
+      "explicacion": "Compresión → combustión-expansión → se abre el escape → la mezcla fresca entra y barre los gases (barrido).",
+      "fuente": "Tema 1 · Motores de 2 tiempos"
+    },
+    {
+      "id": "t1-21",
+      "tipo": "test",
+      "enunciado": "En la fase de admisión-compresión de un 2T, ¿qué hace la cara inferior del pistón?",
+      "opciones": [
+        "Succiona la mezcla hacia el cárter a través de la lumbrera de admisión",
+        "Comprime la mezcla en la cámara de combustión",
+        "Expulsa los gases por la lumbrera de escape",
+        "Abre la válvula de admisión"
+      ],
+      "correcta": 0,
+      "explicacion": "Mientras la cara superior comprime en el cilindro, la inferior succiona mezcla por la lumbrera de admisión (cárter sellado).",
+      "fuente": "Tema 1 · Motores de 2 tiempos: fase de admisión-compresión"
+    },
+    {
+      "id": "t1-22",
+      "tipo": "vf",
+      "enunciado": "Para que funcione la fase de admisión-compresión de un 2T, el cárter tiene que estar sellado.",
+      "correcta": true,
+      "explicacion": "Verdadero: el cárter hace de depósito de preadmisión; si no estuviera sellado no podría succionar la mezcla.",
+      "fuente": "Tema 1 · Motores de 2 tiempos: fase de admisión-compresión"
+    },
+    {
+      "id": "t1-23",
+      "tipo": "test",
+      "enunciado": "En un 2T, ¿por qué lumbrera pasa la mezcla del cárter al cilindro?",
+      "opciones": ["De transferencia", "De escape", "De admisión", "Ninguna: pasa por una válvula"],
+      "correcta": 0,
+      "explicacion": "Al bajar el pistón abre la lumbrera de escape (salen los gases) y la de transferencia (la mezcla pasa del cárter al cilindro).",
+      "fuente": "Tema 1 · Motores de 2 tiempos: fase de potencia-escape"
+    },
+    {
+      "id": "t1-24",
+      "tipo": "clasificar",
+      "enunciado": "Del 2T frente al 4T: ¿ventaja o inconveniente?",
+      "cajas": ["Ventaja del 2T", "Inconveniente del 2T"],
+      "tarjetas": [
+        { "texto": "Mayor potencia específica por volumen y peso", "caja": 0 },
+        { "texto": "Más ligero, sencillo y económico", "caja": 0 },
+        { "texto": "Elimina el sistema de renovación de la carga", "caja": 0 },
+        { "texto": "Quema aceite junto con la mezcla", "caja": 1 },
+        { "texto": "Rendimiento inferior", "caja": 1 },
+        { "texto": "Emisiones más contaminantes", "caja": 1 },
+        { "texto": "Suciedad que puede afectar a la bujía", "caja": 1 }
+      ],
+      "explicacion": "El 2T gana en potencia, peso y sencillez; pierde en consumo de aceite, rendimiento y emisiones.",
+      "fuente": "Tema 1 · 4 tiempos vs 2 tiempos"
+    },
+    {
+      "id": "t1-25",
+      "tipo": "clasificar",
+      "enunciado": "Aplicaciones del 2T: ¿de gasolina o diésel?",
+      "cajas": ["2T gasolina", "2T diésel"],
+      "tarjetas": [
+        { "texto": "Motocicletas de menos de 350 cc", "caja": 0 },
+        { "texto": "Motores fuera borda", "caja": 0 },
+        { "texto": "Motosierras", "caja": 0 },
+        { "texto": "Cortadoras de césped", "caja": 0 },
+        { "texto": "Motores de barcos (35.000 CV)", "caja": 1 },
+        { "texto": "Grandes potencias", "caja": 1 },
+        { "texto": "Bajas revoluciones (80–200 rpm)", "caja": 1 }
+      ],
+      "explicacion": "2T gasolina: pequeñas potencias y cilindradas. 2T diésel: grandes potencias a bajas revoluciones, como los barcos.",
+      "fuente": "Tema 1 · 4 tiempos vs 2 tiempos: aplicaciones"
+    },
+    {
+      "id": "t1-26",
+      "tipo": "vf",
+      "enunciado": "En teoría, un 2T consigue la misma potencia que un 4T en la mitad de tiempo.",
+      "correcta": true,
+      "explicacion": "Verdadero: hace un ciclo por cada vuelta de cigüeñal (el 4T necesita dos). Por eso tiene mayor potencia específica.",
+      "fuente": "Tema 1 · 4 tiempos vs 2 tiempos: ventajas"
+    },
+    {
+      "id": "t1-27",
+      "tipo": "test",
+      "enunciado": "¿Por qué un 2T tiene un rendimiento inferior al de un 4T?",
+      "opciones": [
+        "Su combustión y su renovación de carga son menos efectivas",
+        "Porque tiene más sistemas auxiliares",
+        "Porque usa válvulas más pequeñas",
+        "Porque gira a menos revoluciones"
+      ],
+      "correcta": 0,
+      "explicacion": "Tanto la combustión como la renovación de carga son menos efectivas que en el 4T; por eso también contamina más.",
+      "fuente": "Tema 1 · 4 tiempos vs 2 tiempos: inconvenientes"
+    },
+    {
+      "id": "t1-28",
+      "tipo": "emparejar",
+      "enunciado": "Une cada sistema de inyección con su definición.",
+      "pares": [
+        { "izq": "Inyección directa", "der": "El combustible se inyecta en la cámara de combustión" },
+        { "izq": "Inyección indirecta", "der": "El combustible se inyecta en el conducto de admisión" },
+        { "izq": "Monopunto", "der": "Un solo inyector" },
+        { "izq": "Multipunto", "der": "Un inyector por cada cilindro" }
+      ],
+      "explicacion": "Directa = dentro de la cámara; indirecta = en el conducto de admisión, que puede ser monopunto (1 inyector) o multipunto (1 por cilindro).",
+      "fuente": "Tema 1 · Suministro de combustible"
+    },
+    {
+      "id": "t1-29",
+      "tipo": "clasificar",
+      "enunciado": "Inyección directa: ¿ventaja o inconveniente?",
+      "cajas": ["Ventaja", "Inconveniente"],
+      "tarjetas": [
+        { "texto": "Menor consumo de combustible", "caja": 0 },
+        { "texto": "Mayor rendimiento", "caja": 0 },
+        { "texto": "Mayor relación de compresión", "caja": 0 },
+        { "texto": "Funcionamiento más estable", "caja": 0 },
+        { "texto": "Mayores emisiones de NOx", "caja": 1 },
+        { "texto": "No permite el ciclo Atkinson (híbridos)", "caja": 1 },
+        { "texto": "Más cara", "caja": 1 },
+        { "texto": "Los inyectores sufren más (más mantenimiento)", "caja": 1 }
+      ],
+      "explicacion": "Directa: menos consumo, más rendimiento, más r y más estabilidad; pero más NOx, sin Atkinson, más cara y más mantenimiento.",
+      "fuente": "Tema 1 · Suministro de combustible: inyección directa"
+    },
+    {
+      "id": "t1-30",
+      "tipo": "test",
+      "enunciado": "¿Por qué la inyección directa consume menos combustible?",
+      "opciones": [
+        "Porque tiene menores pérdidas de calor",
+        "Porque inyecta en el conducto de admisión",
+        "Porque usa un solo inyector",
+        "Porque reduce las emisiones de NOx"
+      ],
+      "correcta": 0,
+      "explicacion": "Los apuntes lo explican por las menores pérdidas de calor, que dan mayor rendimiento. Ojo: las emisiones de NOx son MAYORES.",
+      "fuente": "Tema 1 · Suministro de combustible: inyección directa"
+    },
+    {
+      "id": "t1-31",
+      "tipo": "vf",
+      "enunciado": "El common rail es un sistema de inyección indirecta de gasolina.",
+      "correcta": false,
+      "explicacion": "Falso: es un sistema de inyección DIRECTA DIÉSEL donde el combustible llega a los inyectores desde un conducto común.",
+      "fuente": "Tema 1 · Suministro de combustible: common rail"
+    },
+    {
+      "id": "t1-32",
+      "tipo": "ordenar",
+      "enunciado": "Ordena la evolución de la preparación de la mezcla en los MEP (de más antiguo a más moderno).",
+      "pasos": ["Carburador", "Inyección indirecta", "Inyección directa"],
+      "explicacion": "Primero el carburador, después la inyección en el colector de admisión (indirecta) y por último dentro de la cámara (directa).",
+      "fuente": "Tema 1 · Suministro de combustible: preparación de la mezcla en MEP"
+    },
+    {
+      "id": "t1-33",
+      "tipo": "test",
+      "enunciado": "¿Qué tiene de «común» el sistema common rail?",
+      "opciones": [
+        "Todos los inyectores se alimentan desde un conducto común",
+        "Un solo inyector sirve a todos los cilindros",
+        "Comparte el combustible con el circuito de aceite",
+        "Dos cilindros comparten la misma cámara de combustión"
+      ],
+      "correcta": 0,
+      "explicacion": "«Rail» = conducto: la alimentación de combustible de todos los inyectores se hace desde un conducto común.",
+      "fuente": "Tema 1 · Suministro de combustible: common rail"
+    },
+    {
+      "id": "t1-34",
+      "tipo": "test",
+      "enunciado": "¿Cuál es el objetivo de la sobrealimentación?",
+      "opciones": [
+        "Aumentar la potencia incrementando el caudal (la densidad) del aire de admisión",
+        "Reducir la temperatura de los gases de escape",
+        "Disminuir la relación de compresión",
+        "Eliminar el sistema de refrigeración"
+      ],
+      "correcta": 0,
+      "explicacion": "Más densidad de aire = más aire en el cilindro = más potencia. Se logra subiendo la presión (turbo) y bajando la temperatura (intercooler).",
+      "fuente": "Tema 1 · Clasificación por presión de admisión"
+    },
+    {
+      "id": "t1-35",
+      "tipo": "ordenar",
+      "enunciado": "Ordena el recorrido en un motor turboalimentado con intercooler.",
+      "pasos": [
+        "Los gases de escape salen del motor",
+        "Los gases de escape mueven la turbina",
+        "La turbina mueve el compresor",
+        "El compresor comprime el aire de admisión",
+        "El intercooler enfría ese aire",
+        "El aire entra en el cilindro"
+      ],
+      "explicacion": "Escape → turbina → compresor (sube la presión) → intercooler (baja la temperatura) → cilindro.",
+      "fuente": "Tema 1 · Presión de admisión: turbocompresor e intercooler"
+    },
+    {
+      "id": "t1-36",
+      "tipo": "emparejar",
+      "enunciado": "Une cada elemento con lo que hace.",
+      "pares": [
+        { "izq": "Turbina", "der": "La mueven los gases de escape" },
+        { "izq": "Compresor", "der": "Aumenta la presión del aire de admisión" },
+        { "izq": "Intercooler", "der": "Baja la temperatura del aire de admisión" },
+        { "izq": "Aspiración natural", "der": "El aire entra a presión atmosférica" }
+      ],
+      "explicacion": "Turbocompresor = turbina (movida por el escape) + compresor (comprime el aire). El intercooler es un intercambiador que lo enfría.",
+      "fuente": "Tema 1 · Presión de admisión: turbocompresor e intercooler"
+    },
+    {
+      "id": "t1-37",
+      "tipo": "vf",
+      "enunciado": "El intercooler ayuda a la sobrealimentación porque, al enfriar el aire, aumenta su densidad.",
+      "correcta": true,
+      "explicacion": "Verdadero: el objetivo es más densidad de aire; se consigue aumentando la presión y reduciendo la temperatura.",
+      "fuente": "Tema 1 · Presión de admisión: intercooler"
+    },
+    {
+      "id": "t1-38",
+      "tipo": "test",
+      "enunciado": "En un motor sobrealimentado, ¿qué impulsa el aire al cilindro a más presión que la atmosférica?",
+      "opciones": ["Un compresor", "El intercooler", "El cárter", "La lumbrera de transferencia"],
+      "correcta": 0,
+      "explicacion": "Sobrealimentado: el aire entra a mayor presión que la atmosférica impulsado por un compresor. El intercooler solo lo enfría.",
+      "fuente": "Tema 1 · Clasificación por presión de admisión"
+    },
+    {
+      "id": "t1-39",
+      "tipo": "clasificar",
+      "enunciado": "¿Refrigeración por aire o por agua?",
+      "cajas": ["Por aire", "Por agua"],
+      "tarjetas": [
+        { "texto": "Aletas para aumentar la transmisión de calor", "caja": 0 },
+        { "texto": "Apta para motores de aluminio", "caja": 0 },
+        { "texto": "Mayor dimensión del motor", "caja": 0 },
+        { "texto": "Cámaras en bloque y culata por donde circula el refrigerante", "caja": 1 },
+        { "texto": "Necesita bomba", "caja": 1 },
+        { "texto": "Necesita radiador (intercambiador de calor)", "caja": 1 },
+        { "texto": "Aditivos y anticongelante", "caja": 1 }
+      ],
+      "explicacion": "Aire: aletas, aluminio, motor más grande. Agua: cámaras en bloque y culata, bomba de agua y radiador.",
+      "fuente": "Tema 1 · Clasificación por sistema de refrigeración"
+    },
+    {
+      "id": "t1-40",
+      "tipo": "emparejar",
+      "enunciado": "Une cada disposición de cilindros con su descripción.",
+      "pares": [
+        { "izq": "En línea", "der": "Un solo bloque y una sola culata" },
+        { "izq": "En V", "der": "Dos bloques y dos culatas, un solo cigüeñal" },
+        { "izq": "En VR", "der": "V de ángulo menor de 15º con un único bloque-culata" },
+        { "izq": "En W", "der": "Dos bloques VR unidos en una bancada, un cigüeñal" },
+        { "izq": "Bóxer", "der": "Cilindros opuestos a 180º" }
+      ],
+      "explicacion": "Línea (1 bloque), V (2 bloques), VR (V muy cerrada, 1 bloque), W (dos VR), bóxer (V abierta a 180º).",
+      "fuente": "Tema 1 · Clasificación por disposición de los cilindros"
+    },
+    {
+      "id": "t1-41",
+      "tipo": "test",
+      "enunciado": "¿Cuál es la principal ventaja del motor bóxer?",
+      "opciones": [
+        "Reduce la altura del motor",
+        "Reduce el tamaño del cigüeñal por encima de 6 cilindros",
+        "Permite un único sistema bloque-culata",
+        "Es la disposición más habitual"
+      ],
+      "correcta": 0,
+      "explicacion": "Al tener los cilindros tumbados y opuestos (V a 180º), el motor es más bajo. La más habitual es en línea.",
+      "fuente": "Tema 1 · Disposición de los cilindros: bóxer"
+    },
+    {
+      "id": "t1-42",
+      "tipo": "vf",
+      "enunciado": "En un motor en línea de más de 6 cilindros el cigüeñal es muy grande, lo que supone un problema estructural.",
+      "correcta": true,
+      "explicacion": "Verdadero. Por eso se usa la V: por encima de 6 cilindros permite reducir el tamaño del cigüeñal.",
+      "fuente": "Tema 1 · Disposición de los cilindros: en línea y en V"
+    },
+    {
+      "id": "t1-43",
+      "tipo": "test",
+      "enunciado": "¿Qué permite el pequeño ángulo entre cilindros (menor de 15º) del motor VR?",
+      "opciones": [
+        "Usar un único sistema bloque-culata",
+        "Reducir la altura como un bóxer",
+        "Usar dos cigüeñales",
+        "Prescindir de la culata"
+      ],
+      "correcta": 0,
+      "explicacion": "Es una V tan cerrada que todos los cilindros caben en un solo bloque con una sola culata.",
+      "fuente": "Tema 1 · Disposición de los cilindros: VR"
+    },
+    {
+      "id": "t1-44",
+      "tipo": "test",
+      "enunciado": "¿Cuál NO es uno de los criterios de clasificación de los MCIA de los apuntes?",
+      "opciones": ["Tipo de caja de cambios", "Presión de admisión", "Sistema de refrigeración", "Disposición de los cilindros"],
+      "correcta": 0,
+      "explicacion": "Los 6 criterios: combustión, tiempos, suministro de combustible, presión de admisión, refrigeración y disposición de cilindros.",
+      "fuente": "Tema 1 · Clasificación de MCIA"
+    },
+    {
+      "id": "t1-45",
+      "tipo": "clasificar",
+      "enunciado": "¿A qué sistema de suministro de combustible corresponde?",
+      "cajas": ["Carburación", "Inyección indirecta", "Inyección directa"],
+      "tarjetas": [
+        { "texto": "El sistema más antiguo en MEP", "caja": 0 },
+        { "texto": "Se inyecta en el conducto de admisión", "caja": 1 },
+        { "texto": "Monopunto: un solo inyector", "caja": 1 },
+        { "texto": "Multipunto: un inyector por cilindro", "caja": 1 },
+        { "texto": "Se inyecta en la cámara de combustión", "caja": 2 },
+        { "texto": "Common rail (diésel)", "caja": 2 },
+        { "texto": "Más emisiones de NOx", "caja": 2 }
+      ],
+      "explicacion": "Carburador → indirecta (monopunto o multipunto, en el conducto) → directa (en la cámara; common rail en diésel; más NOx).",
+      "fuente": "Tema 1 · Suministro de combustible"
+    },
+    {
+      "id": "t1-46",
+      "tipo": "clasificar",
+      "enunciado": "¿Aspiración natural o sobrealimentado?",
+      "cajas": ["Aspiración natural", "Sobrealimentado"],
+      "tarjetas": [
+        { "texto": "El aire entra a presión atmosférica", "caja": 0 },
+        { "texto": "No lleva compresor", "caja": 0 },
+        { "texto": "Un compresor impulsa el aire", "caja": 1 },
+        { "texto": "Turbina movida por los gases de escape", "caja": 1 },
+        { "texto": "Intercooler", "caja": 1 },
+        { "texto": "Busca más potencia aumentando la densidad del aire", "caja": 1 }
+      ],
+      "explicacion": "Atmosférico: el aire entra a presión atmosférica. Sobrealimentado: un compresor (p. ej. turbo) lo mete a más presión, y el intercooler lo enfría.",
+      "fuente": "Tema 1 · Clasificación por presión de admisión"
+    }
+  ]
+}

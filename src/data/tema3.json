@@ -1,0 +1,407 @@
+{
+  "numero": 3,
+  "titulo": "Ciclos termodinámicos",
+  "juego": "Diagrama p-V",
+  "descripcion": "Coloca cada proceso en su tramo del ciclo",
+  "items": [
+    {
+      "id": "t3-01", "tipo": "diagrama", "diagrama": "pv_otto", "modo": "etiquetar",
+      "enunciado": "Ciclo Otto: ¿qué ocurre en cada tramo?",
+      "huecos": [
+        { "zona": "t12", "etiqueta": "Compresión adiabática" },
+        { "zona": "t23", "etiqueta": "Combustión: aporte de calor a volumen constante" },
+        { "zona": "t34", "etiqueta": "Expansión adiabática" },
+        { "zona": "t41", "etiqueta": "Escape: baja la presión a volumen constante" }
+      ],
+      "explicacion": "Otto = 2 adiabáticas (compresión 1-2 y expansión 3-4) + 2 isócoras (combustión 2-3 y escape 4-1).",
+      "fuente": "Tema 3 · Ciclo Otto ideal"
+    },
+    {
+      "id": "t3-02", "tipo": "diagrama", "diagrama": "pv_otto", "modo": "etiquetar",
+      "enunciado": "Ciclo Otto: ¿qué tipo de proceso es cada tramo?",
+      "huecos": [
+        { "zona": "t12", "etiqueta": "Adiabática" },
+        { "zona": "t23", "etiqueta": "Isócora (V constante)" },
+        { "zona": "t34", "etiqueta": "Adiabática" },
+        { "zona": "t41", "etiqueta": "Isócora (V constante)" }
+      ],
+      "explicacion": "Los tramos verticales del p-V son isócoras (no cambia el volumen); las curvas, adiabáticas (sin intercambio de calor).",
+      "fuente": "Tema 3 · Ciclo Otto ideal"
+    },
+    {
+      "id": "t3-03", "tipo": "diagrama", "diagrama": "pv_diesel", "modo": "etiquetar",
+      "enunciado": "Ciclo Diesel: ¿qué ocurre en cada tramo?",
+      "huecos": [
+        { "zona": "t12", "etiqueta": "Compresión adiabática" },
+        { "zona": "t23", "etiqueta": "Combustión: aporte de calor a presión constante" },
+        { "zona": "t34", "etiqueta": "Expansión adiabática" },
+        { "zona": "t41", "etiqueta": "Escape: baja la presión a volumen constante" }
+      ],
+      "explicacion": "Igual que el Otto salvo la combustión 2-3, que en el Diesel es a presión constante (tramo horizontal).",
+      "fuente": "Tema 3 · Ciclo Diesel ideal"
+    },
+    {
+      "id": "t3-04", "tipo": "diagrama", "diagrama": "pv_diesel", "modo": "etiquetar",
+      "enunciado": "Ciclo Diesel: ¿qué tipo de proceso es cada tramo?",
+      "huecos": [
+        { "zona": "t12", "etiqueta": "Adiabática" },
+        { "zona": "t23", "etiqueta": "Isóbara (p constante)" },
+        { "zona": "t34", "etiqueta": "Adiabática" },
+        { "zona": "t41", "etiqueta": "Isócora (V constante)" }
+      ],
+      "explicacion": "Diesel = 2 adiabáticas + 1 isóbara (combustión, horizontal) + 1 isócora (escape, vertical).",
+      "fuente": "Tema 3 · Ciclo Diesel ideal"
+    },
+    {
+      "id": "t3-05", "tipo": "diagrama", "diagrama": "pv_dual", "modo": "etiquetar",
+      "enunciado": "Ciclo Dual: ¿qué ocurre en cada tramo?",
+      "huecos": [
+        { "zona": "t12", "etiqueta": "Compresión adiabática" },
+        { "zona": "t23", "etiqueta": "Combustión a volumen constante" },
+        { "zona": "t34", "etiqueta": "Combustión a presión constante" },
+        { "zona": "t45", "etiqueta": "Expansión adiabática" },
+        { "zona": "t51", "etiqueta": "Escape: baja la presión a volumen constante" }
+      ],
+      "explicacion": "Dual = 2 adiabáticas + 2 isócoras + 1 isóbara: la combustión empieza a volumen constante (2-3) y sigue a presión constante (3-4).",
+      "fuente": "Tema 3 · Ciclo Dual"
+    },
+    {
+      "id": "t3-06", "tipo": "diagrama", "diagrama": "pv_otto", "modo": "pregunta",
+      "opcionesTexto": ["Otto", "Diesel", "Dual"], "correcta": 0,
+      "enunciado": "¿Qué ciclo ideal representa este diagrama p-V?",
+      "explicacion": "Dos tramos verticales (isócoras) y dos curvas adiabáticas: es el Otto. El calor entra a volumen constante.",
+      "fuente": "Tema 3 · Ciclo Otto ideal"
+    },
+    {
+      "id": "t3-07", "tipo": "diagrama", "diagrama": "pv_diesel", "modo": "pregunta",
+      "opcionesTexto": ["Otto", "Diesel", "Dual"], "correcta": 1,
+      "enunciado": "¿Qué ciclo ideal representa este diagrama p-V?",
+      "explicacion": "La combustión es un tramo horizontal (isóbara) y el escape uno vertical: es el Diesel.",
+      "fuente": "Tema 3 · Ciclo Diesel ideal"
+    },
+    {
+      "id": "t3-08", "tipo": "diagrama", "diagrama": "pv_dual", "modo": "pregunta",
+      "opcionesTexto": ["Otto", "Diesel", "Dual"], "correcta": 2,
+      "enunciado": "¿Qué ciclo ideal representa este diagrama p-V?",
+      "explicacion": "La combustión tiene un tramo vertical y luego uno horizontal: es el Dual, híbrido entre Otto y Diesel.",
+      "fuente": "Tema 3 · Ciclo Dual"
+    },
+    {
+      "id": "t3-09", "tipo": "diagrama", "diagrama": "pv_diesel", "modo": "toca", "objetivo": "t23",
+      "enunciado": "Ciclo Diesel: toca el tramo donde se aporta calor a presión constante.",
+      "explicacion": "Es el 2-3, la isóbara. Su relación de volúmenes V3/V2 es la relación de corte de admisión (rc).",
+      "fuente": "Tema 3 · Ciclo Diesel ideal"
+    },
+    {
+      "id": "t3-10", "tipo": "diagrama", "diagrama": "pv_dual", "modo": "toca", "objetivo": "t23",
+      "enunciado": "Ciclo Dual: toca la parte de la combustión que ocurre a volumen constante.",
+      "explicacion": "En el Dual la combustión empieza a volumen constante (2-3, vertical) y sigue a presión constante (3-4).",
+      "fuente": "Tema 3 · Ciclo Dual"
+    },
+    {
+      "id": "t3-11", "tipo": "diagrama", "diagrama": "pv_otto", "modo": "toca", "objetivo": "t34",
+      "enunciado": "Ciclo Otto: toca la expansión adiabática.",
+      "explicacion": "La 3-4: los gases empujan el pistón desde el PMS hasta el PMI sin intercambio de calor. Es el tramo que da trabajo.",
+      "fuente": "Tema 3 · Ciclo Otto ideal"
+    },
+    {
+      "id": "t3-12", "tipo": "diagrama", "diagrama": "pv_otto", "modo": "toca", "objetivo": "t41",
+      "enunciado": "Ciclo Otto: toca el tramo que sustituye al escape (cesión de calor).",
+      "explicacion": "El 4-1: en el ciclo ideal el escape se sustituye por una cesión de calor a volumen constante (en el PMI).",
+      "fuente": "Tema 3 · Ciclo Otto ideal"
+    },
+    {
+      "id": "t3-13", "tipo": "diagrama", "diagrama": "pv_real", "modo": "toca", "objetivo": "p_bombeo",
+      "enunciado": "Ciclo real frente al teórico (discontinuo): toca las pérdidas por bombeo.",
+      "explicacion": "Es el lazo de abajo, junto a la presión atmosférica: el trabajo de meter aire (admisión) y sacar gases (escape).",
+      "fuente": "Tema 3 · Ciclo Otto real"
+    },
+    {
+      "id": "t3-14", "tipo": "diagrama", "diagrama": "pv_real", "modo": "identifica", "objetivo": "p_calor",
+      "opciones": ["p_calor", "p_tiempo", "p_escape", "p_bombeo"],
+      "enunciado": "¿Qué pérdida del ciclo real está resaltada?",
+      "explicacion": "Pérdidas de calor (12 %): el calor que se va por las paredes hace que la expansión real quede por debajo de la teórica.",
+      "fuente": "Tema 3 · Ciclo Otto real"
+    },
+    {
+      "id": "t3-15", "tipo": "diagrama", "diagrama": "pv_real", "modo": "identifica", "objetivo": "p_tiempo",
+      "opciones": ["p_tiempo", "p_calor", "p_escape", "p_bombeo"],
+      "enunciado": "¿Qué pérdida del ciclo real está resaltada?",
+      "explicacion": "Pérdidas de tiempo (6 %): la combustión no es instantánea, así que la esquina superior del ciclo real se redondea.",
+      "fuente": "Tema 3 · Ciclo Otto real"
+    },
+    {
+      "id": "t3-16", "tipo": "diagrama", "diagrama": "pv_real", "modo": "identifica", "objetivo": "p_escape",
+      "opciones": ["p_escape", "p_bombeo", "p_tiempo", "p_calor"],
+      "enunciado": "¿Qué pérdida del ciclo real está resaltada?",
+      "explicacion": "Pérdidas de escape (2 %): la válvula de escape se abre antes del PMI y se pierde parte del final de la expansión.",
+      "fuente": "Tema 3 · Ciclo Otto real"
+    },
+    {
+      "id": "t3-17", "tipo": "diagrama", "diagrama": "distribucion", "modo": "etiquetar",
+      "enunciado": "Diagrama de distribución (PMS arriba, giro horario): coloca cada ángulo.",
+      "huecos": [
+        { "zona": "aava", "etiqueta": "AAVA" },
+        { "zona": "rcve", "etiqueta": "RCVE" },
+        { "zona": "aave", "etiqueta": "AAVE" },
+        { "zona": "rcva", "etiqueta": "RCVA" }
+      ],
+      "explicacion": "Junto al PMS: AAVA (antes) y RCVE (después). Junto al PMI: AAVE (antes) y RCVA (después).",
+      "fuente": "Tema 3 · Ciclo Otto real: ángulos de distribución"
+    },
+    {
+      "id": "t3-18", "tipo": "diagrama", "diagrama": "distribucion", "modo": "toca", "objetivo": "cruce",
+      "enunciado": "Toca la zona del cruce de válvulas.",
+      "explicacion": "Cerca del PMS, entre AAVA y RCVE, admisión y escape están abiertas a la vez. Cruce = AAA + RCE.",
+      "fuente": "Tema 3 · Ciclo Otto real: ángulos de distribución"
+    },
+    {
+      "id": "t3-19", "tipo": "diagrama", "diagrama": "distribucion", "modo": "identifica", "objetivo": "aave",
+      "opciones": ["aave", "rcva", "aava", "rcve"],
+      "enunciado": "¿Qué ángulo de distribución está resaltado?",
+      "explicacion": "Es donde empieza el escape (naranja), antes de llegar al PMI: Avance de la Apertura de la Válvula de Escape.",
+      "fuente": "Tema 3 · Ciclo Otto real: ángulos de distribución"
+    },
+    {
+      "id": "t3-20", "tipo": "diagrama", "diagrama": "distribucion", "modo": "identifica", "objetivo": "rcva",
+      "opciones": ["rcva", "aave", "aava", "rcve"],
+      "enunciado": "¿Qué ángulo de distribución está resaltado?",
+      "explicacion": "Es donde termina la admisión (azul), ya pasado el PMI: Retraso del Cierre de la Válvula de Admisión.",
+      "fuente": "Tema 3 · Ciclo Otto real: ángulos de distribución"
+    },
+    {
+      "id": "t3-21", "tipo": "clasificar",
+      "enunciado": "¿Es una hipótesis del ciclo ideal o algo que ocurre en el ciclo real?",
+      "cajas": ["Hipótesis del ciclo ideal", "Ciclo real"],
+      "tarjetas": [
+        { "texto": "El aire se comporta como gas ideal", "caja": 0 },
+        { "texto": "Procesos internamente reversibles", "caja": 0 },
+        { "texto": "La combustión se sustituye por un aporte de calor", "caja": 0 },
+        { "texto": "El escape se sustituye por una cesión de calor", "caja": 0 },
+        { "texto": "Se pierde calor por las paredes", "caja": 1 },
+        { "texto": "La combustión tarda un tiempo", "caja": 1 },
+        { "texto": "La válvula de escape se abre antes del PMI", "caja": 1 },
+        { "texto": "Hay trabajo de bombeo en admisión y escape", "caja": 1 }
+      ],
+      "explicacion": "El ciclo ideal simplifica (gas ideal, reversible, calor en vez de combustión y escape). El real tiene pérdidas de calor, tiempo, escape y bombeo.",
+      "fuente": "Tema 3 · Ciclo ideal: hipótesis · Ciclo Otto real"
+    },
+    {
+      "id": "t3-22", "tipo": "vf",
+      "enunciado": "Las hipótesis del ciclo Diesel y del Dual ideales son análogas a las del ciclo Otto.",
+      "correcta": true,
+      "explicacion": "Verdadero: en los tres se supone aire como gas ideal, procesos reversibles y calor en lugar de combustión y escape.",
+      "fuente": "Tema 3 · Ciclo Diesel y Dual: hipótesis"
+    },
+    {
+      "id": "t3-23", "tipo": "clasificar",
+      "enunciado": "¿Ciclo Otto o ciclo Diesel?",
+      "cajas": ["Otto", "Diesel"],
+      "tarjetas": [
+        { "texto": "Aporte de calor a volumen constante", "caja": 0 },
+        { "texto": "Aporte de calor a presión constante", "caja": 1 },
+        { "texto": "2 adiabáticas + 2 isócoras", "caja": 0 },
+        { "texto": "2 adiabáticas + 1 isóbara + 1 isócora", "caja": 1 },
+        { "texto": "r típica de 8 a 11", "caja": 0 },
+        { "texto": "r típica de 12 a 24", "caja": 1 },
+        { "texto": "Idealiza el MEP (gasolina)", "caja": 0 },
+        { "texto": "Idealiza el MEC (diésel)", "caja": 1 }
+      ],
+      "explicacion": "Otto (MEP): calor a V constante, r ≈ 8–11. Diesel (MEC): calor a p constante, r ≈ 12–24.",
+      "fuente": "Tema 3 · Ciclos Otto y Diesel ideales"
+    },
+    {
+      "id": "t3-24", "tipo": "test",
+      "enunciado": "¿Qué es la relación de compresión r?",
+      "opciones": [
+        "Volumen máximo del cilindro / volumen mínimo",
+        "Presión máxima / presión mínima del ciclo",
+        "V3/V2 durante la combustión del Diesel",
+        "Calor a volumen constante / calor a presión constante"
+      ],
+      "correcta": 0,
+      "explicacion": "r = Vmáx/Vmín = V(PMI)/V(PMS): mide en qué proporción se comprime el fluido.",
+      "fuente": "Tema 3 · Ciclo Otto ideal: rendimiento"
+    },
+    {
+      "id": "t3-25", "tipo": "test",
+      "enunciado": "¿Qué es la relación de corte de admisión rc del ciclo Diesel?",
+      "opciones": [
+        "V3/V2: relación de volúmenes durante la combustión",
+        "Vmáx/Vmín del cilindro",
+        "p3/p2: relación de presiones",
+        "Qv/Qp: reparto del calor aportado"
+      ],
+      "correcta": 0,
+      "explicacion": "rc = V3/V2: cuánto crece el volumen mientras se aporta el calor a presión constante.",
+      "fuente": "Tema 3 · Ciclo Diesel ideal: rendimiento"
+    },
+    {
+      "id": "t3-26", "tipo": "test",
+      "enunciado": "¿De qué depende el rendimiento del ciclo Otto ideal?",
+      "opciones": [
+        "De la relación de compresión r y de γ",
+        "Solo de la temperatura máxima",
+        "De rc y del calor aportado",
+        "Del régimen de giro"
+      ],
+      "correcta": 0,
+      "explicacion": "η Otto ideal = 1 − 1/r^(γ−1): crece con r y con γ (CO2 1,3; aire 1,4; He 1,67).",
+      "fuente": "Tema 3 · Ciclo Otto ideal: rendimiento"
+    },
+    {
+      "id": "t3-27", "tipo": "efecto",
+      "enunciado": "Ciclo Otto ideal: aumentamos la relación de compresión r. ¿Qué le pasa al rendimiento?",
+      "correcta": "sube",
+      "explicacion": "Más r → más rendimiento. Por eso la inyección directa, que permite más r, rinde más.",
+      "fuente": "Tema 3 · Ciclo Otto ideal: rendimiento"
+    },
+    {
+      "id": "t3-28", "tipo": "efecto",
+      "enunciado": "Ciclo Otto ideal: usamos un gas de γ mayor (He, 1,67, en vez de aire, 1,4). ¿Rendimiento?",
+      "correcta": "sube",
+      "explicacion": "Más γ → más rendimiento: en la gráfica de los apuntes el He queda por encima del aire y el CO2 por debajo.",
+      "fuente": "Tema 3 · Ciclo Otto ideal: rendimiento"
+    },
+    {
+      "id": "t3-29", "tipo": "vf",
+      "enunciado": "A igual relación de compresión, el ciclo Diesel tiene mayor rendimiento que el Otto.",
+      "correcta": false,
+      "explicacion": "Falso: a igual r el Diesel rinde MENOS. En la práctica rinde más porque trabaja con r mucho mayores.",
+      "fuente": "Tema 3 · Ciclo Diesel: rendimiento"
+    },
+    {
+      "id": "t3-30", "tipo": "test",
+      "enunciado": "¿Por qué en la práctica los diésel tienen mayor rendimiento (45–50 %) que los Otto?",
+      "opciones": [
+        "Porque trabajan con relaciones de compresión mayores",
+        "Porque aportan el calor a volumen constante",
+        "Porque su gas tiene menor γ",
+        "Porque no tienen pérdidas de calor"
+      ],
+      "correcta": 0,
+      "explicacion": "A igual r el Diesel rinde menos, pero trabaja con r de 12–24 frente a 8–11 del Otto.",
+      "fuente": "Tema 3 · Ciclo Diesel: rendimiento"
+    },
+    {
+      "id": "t3-31", "tipo": "test",
+      "enunciado": "Según los apuntes, ¿qué rendimiento real tiene un ciclo Otto?",
+      "opciones": ["25–30 %", "45–50 %", "60–70 %", "10–15 %"],
+      "correcta": 0,
+      "explicacion": "El Otto real se queda en un 25–30 %, muy por debajo del ideal. Los diésel alcanzan 45–50 %.",
+      "fuente": "Tema 3 · Ciclo Otto ideal: rendimiento"
+    },
+    {
+      "id": "t3-32", "tipo": "vf",
+      "enunciado": "Si la relación de corte de admisión rc tiende a 1, el rendimiento del Diesel tiende al del Otto.",
+      "correcta": true,
+      "explicacion": "Verdadero: con rc = 1 la isóbara desaparece y el ciclo se parece al Otto.",
+      "fuente": "Tema 3 · Ciclo Diesel: rendimiento"
+    },
+    {
+      "id": "t3-33", "tipo": "test",
+      "enunciado": "¿Por qué se utiliza el ciclo Dual?",
+      "opciones": [
+        "Es un híbrido que aproxima mejor el comportamiento real de MEP y MEC",
+        "Porque es el ciclo de los motores de 2 tiempos",
+        "Porque no tiene compresión adiabática",
+        "Porque elimina las pérdidas por bombeo"
+      ],
+      "correcta": 0,
+      "explicacion": "Combina aporte de calor a V constante y a p constante: es el que mejor aproxima tanto un MEP como un MEC.",
+      "fuente": "Tema 3 · Ciclo Dual"
+    },
+    {
+      "id": "t3-34", "tipo": "test",
+      "enunciado": "En el ciclo Dual ideal, ¿cuánto vale la relación Qv/Qp?",
+      "opciones": [
+        "Entre 0,4 y 0,6",
+        "Infinito: todo el calor a volumen constante",
+        "0: todo el calor a presión constante",
+        "Entre 8 y 11"
+      ],
+      "correcta": 0,
+      "explicacion": "Otto: todo el calor a V constante. Diesel: todo a p constante. Dual: un reparto Qv/Qp entre 0,4 y 0,6.",
+      "fuente": "Tema 3 · Ciclo Dual"
+    },
+    {
+      "id": "t3-35", "tipo": "ordenar",
+      "enunciado": "Ordena las pérdidas del ciclo Otto real de mayor a menor.",
+      "pasos": ["Pérdidas de calor (12 %)", "Pérdidas de tiempo (6 %)", "Pérdidas de escape (2 %)"],
+      "explicacion": "Calor 12 % > tiempo 6 % > escape 2 %. Además están las pérdidas por bombeo.",
+      "fuente": "Tema 3 · Ciclo Otto real"
+    },
+    {
+      "id": "t3-36", "tipo": "emparejar",
+      "enunciado": "Une cada ángulo de distribución con su motivo.",
+      "pares": [
+        { "izq": "AAVA", "der": "Abrir admisión antes del PMS para que entre mezcla más tiempo" },
+        { "izq": "RCVA", "der": "Cerrar admisión pasado el PMI: la inercia sigue llenando" },
+        { "izq": "AAVE", "der": "Abrir escape ~40–45º antes del PMI: baja el trabajo de bombeo" },
+        { "izq": "RCVE", "der": "Cerrar escape pasado el PMS: los gases hacen barrido" }
+      ],
+      "explicacion": "Todos buscan un mejor llenado y vaciado del cilindro aprovechando la inercia de la mezcla y de los gases.",
+      "fuente": "Tema 3 · Ciclo Otto real: ángulos de distribución"
+    },
+    {
+      "id": "t3-37", "tipo": "test",
+      "enunciado": "¿Qué es el cruce de válvulas?",
+      "opciones": [
+        "El momento en que admisión y escape están abiertas a la vez",
+        "El momento en que ambas válvulas están cerradas en el PMS",
+        "El retraso del cierre de la válvula de admisión",
+        "La apertura de la válvula de escape antes del PMI"
+      ],
+      "correcta": 0,
+      "explicacion": "Es el «solapamiento» de las aperturas, cerca del PMS: cruce = AAA + RCE.",
+      "fuente": "Tema 3 · Ciclo Otto real: ángulos de distribución"
+    },
+    {
+      "id": "t3-38", "tipo": "vf",
+      "enunciado": "El cruce de válvulas debe ser lo mayor posible para mejorar el llenado.",
+      "correcta": false,
+      "explicacion": "Falso: debe minimizarse para evitar que los gases frescos de la admisión salgan por el escape.",
+      "fuente": "Tema 3 · Ciclo Otto real: ángulos de distribución"
+    },
+    {
+      "id": "t3-39", "tipo": "efecto",
+      "enunciado": "Adelantamos la apertura de la válvula de escape (AAVE). ¿Qué le pasa al trabajo de bombeo?",
+      "correcta": "baja",
+      "explicacion": "Los gases bajan antes su presión y el bombeo disminuye. También baja algo el trabajo de expansión, pero compensa.",
+      "fuente": "Tema 3 · Ciclo Otto real: ángulos de distribución"
+    },
+    {
+      "id": "t3-40", "tipo": "vf",
+      "enunciado": "Idealmente, la válvula de admisión se abriría en el PMS y se cerraría en el PMI.",
+      "correcta": true,
+      "explicacion": "Verdadero (y la de escape, del PMI al PMS). En la realidad se adelantan o retrasan para funcionar mejor.",
+      "fuente": "Tema 3 · Ciclo Otto real: ángulos de distribución"
+    },
+    {
+      "id": "t3-41", "tipo": "test",
+      "enunciado": "¿Por qué no se abren y cierran las válvulas justo en el PMS y el PMI?",
+      "opciones": [
+        "La apertura no es inmediata por la forma de las levas y así el motor funciona mejor",
+        "Porque el cigüeñal gira al revés durante el escape",
+        "Para aumentar la relación de compresión",
+        "Para eliminar el cruce de válvulas"
+      ],
+      "correcta": 0,
+      "explicacion": "La leva no abre de golpe; adelantar o retrasar cada ángulo mejora el llenado y el vaciado.",
+      "fuente": "Tema 3 · Ciclo Otto real: ángulos de distribución"
+    },
+    {
+      "id": "t3-42", "tipo": "test",
+      "enunciado": "¿Qué aprovecha el RCVE (retraso del cierre del escape)?",
+      "opciones": [
+        "La inercia de los gases de escape, que barren la cámara y ayudan a entrar la mezcla fresca",
+        "Que el pistón baja más rápido en la expansión",
+        "La mayor presión de la combustión",
+        "El enfriamiento del intercooler"
+      ],
+      "correcta": 0,
+      "explicacion": "Los gases salientes siguen moviéndose por inercia y hacen un efecto de barrido, incluso pasado el PMS.",
+      "fuente": "Tema 3 · Ciclo Otto real: ángulos de distribución"
+    }
+  ]
+}
