@@ -793,7 +793,7 @@ const distribucion: DefDiagrama = {
   ),
   zonas: {
     cruce: {
-      forma: <path className="pz" fill="#fde68a" opacity={0.9} d={(() => {
+      forma: <path className="pz" fill="#d5dbe4" opacity={0.9} d={(() => {
         const [ax, ay] = polar(160, 165, 128, -20)
         const [bx, by] = polar(160, 165, 128, 20)
         const [cx, cy] = polar(160, 165, 70, 20)
